@@ -35,15 +35,10 @@ The minimal configuration required is simply to set your RD API key (*look for t
 
 A fresh ElfHosted Aar deployment (*or the result of an [ElfBot][elfbot] reset*) will be pre-configured for Decypharr, you'd just need to enable it and disable any other downloaders.
 
-To add Decypharr to an existing Aar, add a new Qbittorrent downloader, as illustrated below:
-
-![](/images/decypharr-setup-1.png)
-
-Important details:
+To add Decypharr to an existing Aar, add a new Qbittorrent downloader, as follows:
 
 * Host: `decypharr`
 * Port: `8282`
-* Username: Set this to the specific Aar's hostname, as listed [here][connect-apps]
 * Category: set to match host portion of the arr's hostname
 
 Decypharr re-uses some qBittorrent conventions for its own options. For example, toggling the `sequential downloads` checkbox will cause Decypharr **not** to symlink, but to download whole files, which is almost certainly **not** what you want, since this will fill up `/storage/symlinks` and break functionality:
