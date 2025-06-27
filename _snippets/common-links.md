@@ -29,6 +29,7 @@
 [gotify]:               /app/gotify/
 [gotosocial]:           /app/gotosocial/
 [homepage]:             /app/homepage/
+[huntarr]:              /app/huntarr/
 [immich]:               /app/immich/
 [jackett]:              /app/jackett/
 [jackettio]:            /app/jackettio/
@@ -53,6 +54,7 @@
 [nextpvr]:              /app/nextpvr/
 [notifiarr]:            /app/notifiarr/
 [nzbget]:               /app/nzbget/
+[nuviostreams]:         /app/nuviostreams/
 [ombi]:                 /app/ombi/
 [openbooks]:            /app/openbooks/
 [overseerr]:            /app/overseerr/
@@ -86,7 +88,7 @@
 [sonarr]:               /app/sonarr/
 [storyteller]:          /app/storyteller/
 [suggestarr]:           /app/suggestarr/
-[stremify]:             /app/stremify/
+[webstreamr]:           /app/webstreamr/
 [stremio-addons]:       /stremio-addons/
 [stremio-jackett]:      /app/stremio-jackett/
 [stremio-server]:       /app/stremio-server/

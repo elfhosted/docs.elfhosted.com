@@ -5,8 +5,9 @@
 # Use a better convention for RSS feed (could add more if necessary)
 /rss/ /feed_rss_created.xml
 
-# Product renames
+# Page renames
 /app/xtremio /app/youriptv 301!
+/open/sponsorship /sponsorship 301!
 
 # Guide refactors
 /guides/media/stream-from-real-debrid-with-plex-radarr-sonarr-prowlarr /guides/media/plex-realdebrid-aars 301!

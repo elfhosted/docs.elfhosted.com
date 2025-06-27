@@ -170,12 +170,13 @@ nav:
       - stremio-addons/index.md
       - AIOStreams: app/aiostreams.md
       - Comet: app/comet.md
-      - KnightCrawler: app/knightcrawler.md 
       - MediaFusion: app/mediafusion.md  
-      - MediaFlow-Proxy: app/mediaflow-proxy.md   
+      - MediaFlow-Proxy: app/mediaflow-proxy.md 
+      - NuvioStreams: app/nuviostreams.md    
       - Stremify: app/stremify.md
       - Stremio-Jackett: app/stremio-jackett.md
       - StremThru: app/stremthru.md
+      - WebStreamr: app/webstreamr.md  
       - YourIPTV: app/youriptv.md
 
   - Store : https://store.elfhosted.com
@@ -257,9 +258,7 @@ nav:
       - Aug 2023: open/august-2023.md
       - Jul 2023: open/july-2023.md    
       - Jun 2023: open/june-2023.md      
-    - Sponsorship: open/sponsorship.md
-  - Contribute:
-    - contribute/index.md
+  - Sponsorship: sponsorship.md
   - Testimonials: testimonials.md 
   - My Account : https://store.elfhosted.com/my-account
 
