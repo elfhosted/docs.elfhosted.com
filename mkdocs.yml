@@ -119,7 +119,6 @@ nav:
 
     - Manage Downloads:
       - AirDC++: app/airdcpp.md
-      - Blackhole: app/blackhole.md    
       - cli_debrid: app/cli-debrid.md
       - Debridav: app/debridav.md
       - Decypharr: app/decypharr.md

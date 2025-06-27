@@ -6,7 +6,6 @@
 [autobrr]:              /app/autobrr/
 [autoscan]:             /app/autoscan/
 [bazarr]:               /app/bazarr/
-[blackhole]:            /app/blackhole/
 [bluesky-pds]:          /app/bluesky-pds/
 [booklore]:             /app/booklore/
 [calibre]:              /app/calibre/

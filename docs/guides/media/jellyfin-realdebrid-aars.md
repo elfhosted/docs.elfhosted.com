@@ -59,7 +59,7 @@ flowchart TD
 1. The user adds items to lists (*Plex watchlist, TMDB list, etc*), which is then added to Jellyseerr, or directly to Radarr/Sonarr..
 2. Or, the user adds items directly to their [Radarr][radarr] / [Sonarr][sonarr], or [Jellyseerr][jellyseerr] (*which adds them to the Aars*)
 3. Radarr / Sonarr notice the the new addition, and search Prowlarr for appropriate files (*matching size, quality, language parameters*)
-4. When an appropriate release is found, Radarr / Sonarr schedules a download via [Blackhole][blackhole]. Blackhole adds the content to RealDebrid (*or fails and triggers a retry if it's not cached*), and moves the file into a `completed` folder
+4. When an appropriate release is found, Radarr / Sonarr schedules a download via [Decypharr][decypharr]. Decypharr adds the content to RealDebrid (*or fails and triggers a retry if it's not cached*), and moves the file into a `completed` folder
 5. Radarr / Sonarr notice the file in the `completed` folder, process it into the intended root folder, and notify Jellyfin of a library update
 6. When the user streams the media, Jellyfin looks in the symlink folder, retrieves the file (*transparently, this is fulfilled by the symlink to the "real" files*), and streams it to the user
 
