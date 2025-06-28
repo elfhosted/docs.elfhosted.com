@@ -1,5 +1,5 @@
 ---
-title: Plex hosting with hardware transcoding for $0.15/day
+title: Cloud Plex Media Server
 slug: Plex
 description: ElfHosted provides simple Plex hosting - including hardware transcoding
 works_with:
