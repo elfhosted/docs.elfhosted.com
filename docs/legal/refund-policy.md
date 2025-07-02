@@ -2,7 +2,7 @@
 
 ## Trial Periods vs refunds
 
-ElfHosted provide generous 7-day trial packages of our apps, starter, and Hobbit bundles. The intention of these trial periods is to afford users ample time to discover the platform, and to determine whether it's a "fit" for them.
+ElfHosted provide generous 7-day trial periods of our apps and lower-tier subscription bundles, for a token $1 to validate payment gateways. The intention of these trial periods is to afford users ample time to discover the platform, and to determine whether it's a "fit" for them. Trial signup fees are non-refundable.
 
 With this goal in mind, ElfHosted will not issue refunds for "unsuitability" of the platform, if users "change their mind" during their subscription term. If the platform is unsuitable, users should have discovered this within their 7-day trial period.
 
@@ -20,7 +20,7 @@ A cancelled trial will immediately be terminated, but can be re-activated for th
 
 ## Refunds
 
-While we reserve the right to make exceptions to this rule based on individual circumstances, refunds are intended for instances when ElfHosted is entirely responsible for the unsuitability of a service, for example, the withdrawl of a particular application or product.
+While we reserve the right to make exceptions to this rule based on individual circumstances, refunds are intended for instances when ElfHosted is entirely responsible for the unsuitability of a service, for example, the withdrawal of a particular application or product.
 
 While ElfHosted will, in good faith, attempt to resolve issues, events outside of ElfHosted's direct control, such as policy or technical changes to 3rd parties (*Plex, RealDebrid, etc*) which render the service unusable, will **not** constitute grounds for a refund.
 
@@ -29,8 +29,9 @@ While ElfHosted will, in good faith, attempt to resolve issues, events outside o
 To be clear, the following are example cases under which you will **not** receive a refund:
 
 * Your cloud provider (*RealDebrid, AllDebrid, etc*) bans your account
+* Your ISP blocks access to ElfHosted resources, or you connection is not fast enough to sustain services
 * Plex block our IP / VPN ranges
-* RealDebrid makes technical changes which renders the service unusable
+* A developer or provider makes technical or application changes which renders the service unusable
 * You replace your smart TV and streaming no longer works well
 * Our datacenter providers suspend services or make changes which render the service unusable (*in this case, we would in good faith, move services to alternative providers*)
 * There is a price difference between the amount paid and any promotional price
