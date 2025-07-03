@@ -142,6 +142,6 @@ Here's how Debrid Stream Proxying works
 
 ### Test your speed
 
-To test your streaming speed to your Comet instance, browse to `https://<your username>-comet.elfhosted.com/speed/` to perform a speedtest.
+To test your streaming speed to your Comet instance, browse to `https://speed.elfhosted.com` to perform a speedtest to the datacenter whose suffix which matches your Comet URL (*too slow? You can [migrate](/how-to/migrate-datacenters/) to a closer datacenter, based on your speedtest results*)
 
 {% include 'app_footer.md' %}
