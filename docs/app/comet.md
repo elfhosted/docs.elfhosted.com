@@ -73,10 +73,17 @@ Now visit your Comet URL from your dashboard, enter your debrid provider API key
 
 ### Proxy Streaming and Password
 
-To enable Proxy Streaming, use you can either add the following ENV vars to your ConfigMap, or just use [ElfBot][elfbot], and run:
+To enable Proxy Streaming, use you can either add the following ENV vars to your ConfigMap, or just use [ElfBot][elfbot], and run (*one line at a time*):
+
+Choose your own password, and replace `whatevermypasswordis` below with your own password:
 
 ```
 elfbot env comet PROXY_DEBRID_STREAM_PASSWORD=whatevermypasswordis
+```
+
+And to enable proxy streaming:
+
+```
 elfbot env comet PROXY_DEBRID_STREAM=true
 ```
 
