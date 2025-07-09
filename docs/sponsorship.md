@@ -23,7 +23,7 @@ The following are public service resources hosted by ElfHosted, without a privat
 | [AIOLists](https://aiolists.elfhosted.com)                   | An "all in one" catalogue addon for Stremio
 | [EasyNewsPlus](https://easynewsplus.elfhosted.com)           | A Stremio addon integrated with EasyNews
 | [Formulio](https://formulio.hayd.uk)                   | Stremio Formula 1 Addon (*hosting donated but independently managed*) |
-| [Rating Aggregator](https://rating-aggregator.elfhosted.com)    | A Stremio addon to aggregate rating (*IMDB, Rotten Tomatoes, etc*) for your media |
+| [Rating Aggregator](https://rating-aggregator.elfhosted.com)    | A Stremio addon to aggregate ratings (*IMDB, Rotten Tomatoes, etc*) for your media |
 | [TMDB Addon](https://tmdb.elfhosted.com) | A TMDB catalogue addon for Stremio                        |
 | [Zilean](https://zilean.elfhosted.com)                     | A searchable database of torrent hashes shared by DebridMediaManager or StremThru users        |
 
