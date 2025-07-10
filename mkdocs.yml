@@ -204,9 +204,9 @@ nav:
   - Support:
     - get-help.md
     - Discord: https://discord.elfhosted.com
+    - Earn ElfPoints: how-to/earn-elfpoints.md    
     - Troubleshoot: how-to/troubleshoot.md    
     - Migrate Datacenters: how-to/migrate-datacenters.md
-    - ElfPoints: how-to/earn-elfpoints.md    
     - Reviews: how-to/leave-a-review.md  
     - Plex Token: how-to/get-plex-token.md  
     - StorageBox: what-is/storagebox.md

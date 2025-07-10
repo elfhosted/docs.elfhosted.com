@@ -21,7 +21,7 @@ For every [review](/how-to/leave-a-review/) you post of a product you've purchas
 
 ### Earn for every referral
 
-Every time you use our [pay-it-forward referral system](https://store.elfhosted.com/pay-it-forward/), you [earn ElfPoints](https://store.elfhosted.com/my-account/elfpoints/), when your referrees click, register, or spend.
+Every time you use our [referral system](https://store.elfhosted.com/referral/), you [earn ElfPoints](https://store.elfhosted.com/my-account/elfpoints/), when your referrees click, register, or spend.
 
 ### Earn for being awesome!
 
