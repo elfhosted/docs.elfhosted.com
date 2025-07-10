@@ -65,6 +65,8 @@ elfbot env aiostreams MEDIAFUSION_API_PASSWORD=sameapipasswordyousetformediafusi
 
 We preconfigure AIOStreams with your bundled MediaFlowProxy or StremThru, so usually you'd just set the `credentials` field to match either your StremThru store, or your MediaFlowProxy api_password.
 
+#### Preferring MediaFlowProxy over StremThru
+
 If you have both StremThru **and** MediaFlowProxy, we'll default your AIOStreams to work with StremThru, but you can override these defaults by setting the following ENV vars using [ElfBot][elfbot]:
 
 ```
@@ -73,7 +75,16 @@ elfbot env aiostreams FORCE_PROXY_URL=http://mediaflow-proxy:8888
 elfbot env aiostreams FORCE_PUBLIC_PROXY_HOST="<your mediaflow proxy hostname without https:// infront>"
 ```
 
-!!! tip "Using an external proxy"
-    If, for some reason, you don't want to use the bundled StremThru/MediaFlow Proxy, you can override the default values above by setting your own values.
+#### Using an external proxy
+
+If you prefer to use an external (non-ElfHosted) instance of either StremThru or MediaFlowProxy, you'll need to pass ENV vars to AIOStreams to override our preset defaults. There's usually a disparity between the internal and the public URL of the proxy, but assuming an external StremThru with url `https://mystremthru.mickeymouse.com`, you'd set:
+
+```
+FORCE_PROXY_ID: stremthru
+FORCE_PROXY_URL: https://mystremthru.mickeymouse.com
+FORCE_PUBLIC_PROXY_HOST: mystremthru.mickeymouse.com
+FORCE_PUBLIC_PROXY_PORT: 443         # already the default
+FORCE_PUBLIC_PROXY_PROTOCOL: "https" # already the default
+```
 
 {% include 'app_footer.md' %}
