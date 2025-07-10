@@ -18,7 +18,7 @@ It supports HTTP(S) links, HLS (M3U8) streams, and MPEG-DASH streams, including 
 
 ## How do I use it?
 
-You won't see a link on your ElfHosted dashboard, since MediaFlow Proxy has no UI, but your proxy URL will be `https://<username>-mediaflow-proxy.elfhosted.com`
+You'll find a link on your ElfHosted apps dashboard to MediaFlow Proxy, which provides some generic details. Use the URL for this link when you configure addons which support MediaFlow Proxy.
 
 ### Set the API password
 
