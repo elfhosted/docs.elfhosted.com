@@ -90,9 +90,7 @@ Normally, Plex servers can be remotely administered using https://app.plex.tv - 
 
 ### Get Plex token
 
-To integrate Zurg or plex-debrid with Plex, you need to retrieve a plex "authentication token". THis is a fiddly process, but there's a useful guide [here](https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/).
-
-The easiest way to get the token is to examine the XML of an existing media item in your library - but if you're just getting setup, you don't **have** anything in your library! We've snuck a small movie into `/storage/elfstorage/videos/`, so that you can add this as an "Other Media" library in Plex, scan it, and use it to retrieve your token from the XML!
+Several app integrations require a Plex "authentication token". The simplest way to generate this token, when you need it, is to use the [ElfHosted Plex Token Generator][plex-token]!
 
 ### Auto-empty trash
 
