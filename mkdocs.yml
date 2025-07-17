@@ -257,7 +257,9 @@ nav:
       - Jul 2023: open/july-2023.md    
       - Jun 2023: open/june-2023.md      
   - Sponsorship: sponsorship.md
-  - Testimonials: testimonials.md 
+  - Testimonials: 
+    - testimonials/index.md
+    - testimonials/dorm-room.md
   - My Account : https://store.elfhosted.com/my-account
 
 theme:
