@@ -4,7 +4,7 @@ title: It started in a dorm room.
 
 # It started in a dorm room.
 
-(*Originally posted in [#elf-origins](https://discord.com/channels/396055506072109067/1394791429854728263/1394797485616267346) in Discord*)
+(*This is an anonymized origin story, originally posted in [#elf-origins](https://discord.com/channels/396055506072109067/1394791429854728263/1394797485616267346) in Discord*)
 
 While others were chasing majors or parties, I was burning DVDs—stacks of them—organizing rentals with a clipboard, a signup sheet, and blind faith in the honor system. I wasn’t just a student… I was a one-man blockbuster. A media vigilante.
 
