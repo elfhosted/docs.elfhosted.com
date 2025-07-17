@@ -1,6 +1,6 @@
 ## What users say..
 
-We're rocking some excellent [TrustPilot Reviews](https://www.trustpilot.com/review/elfhosted.com), and here's what some of our {--users--}{++friends++} say..
+We're rocking some excellent :star::star::star::star::star: [TrustPilot Reviews](https://www.trustpilot.com/review/elfhosted.com), and here's what some of our {--users--}{++friends++} say..
 
 > I am new here, but today I learned realized that Elfhosted is one of the best free and open source software communities I've seen, and FOSS communities have been at the center of my life since the 90s (Perl, PHP, Symfony, Drupal, Ethereum, etc.). Great open software built by great people who care = great community, and that is something special. 
 > 
