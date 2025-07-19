@@ -25,3 +25,5 @@ I’ve tried [Riven][riven]. I’ve danced with the add-ons. But I always return
 Now? My ElfHosted library sits at 390TB and counting. Friends and family stream effortlessly. Dolby Vision lights up the AV room like a beacon. And I, once a dorm-room disc hustler, now reign as the provider of all things watchable.
 
 This isn’t just storage. This is destiny.
+
+--8<-- "common-links.md"

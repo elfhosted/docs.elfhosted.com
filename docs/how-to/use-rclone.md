@@ -58,4 +58,22 @@ Primarily, users want to permanently mount their network storage using rclone. E
 
 If you change the parameters of a mount (*say, you need to fix the credentials*), you may need to restart rcloneui with [ElfBot][elfbot] for the changes to apply
 
+### Mounting via SSH
+
+When setting up an SSH remote, it's not possible to specify a non-default path in the remote config - rclone expects you to pass this path as part of the `rclone mount` command, which we don't do.
+
+A workaround for this scenario is to create your SSH remote like thi, and to use `sftpalias` as the intended remote:
+
+```
+[sftpbase]
+type = sftp
+host = sftp.example.com
+user = myuser
+pass = <encrypted>
+
+[sftpalias]
+type = alias
+remote = sftpbase:/desired/default/path
+```
+
 --8<-- "common-links.md"
