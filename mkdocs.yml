@@ -260,6 +260,7 @@ nav:
   - Testimonials: 
     - testimonials/index.md
     - testimonials/dorm-room.md
+    - testimonials/tale-of-the-bitforger.md
   - My Account : https://store.elfhosted.com/my-account
 
 theme:
