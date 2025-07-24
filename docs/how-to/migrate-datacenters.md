@@ -24,13 +24,13 @@ Due to hardware differences, in this environment, users get 25% of RAM limits, a
 
 ## Process
 
-1. (*optionally*) Trigger an offsite backup with [ElfBot][elfbot], and investigate any failures (*if you care about that particular app's data*)
-2. Use [ElfBot] to export all apps' environment variables (a global command)
+1. (*optionally, if you care about changes in the past 24h*) Trigger an offsite backup with [ElfBot][elfbot]
+2. (*optionally, if you've ever set ENV vars*) Use [ElfBot] to export all apps' environment variables (a global command)
 3. Use https://speed.elfhosted.com to identify your ideal datacenter
 4. Add the "[Elf-spedition](https://store.elfhosted.com/product/regional-relocation)" subscription to your account, picking the appropriate datacenter
 5. Your apps will be turned off on the primary cluster, and created on the target cluster - this may take 10-15 minutes, depending on the volume of data restored from offsite backup
 6. Your apps will run from the new cluster, with a new domain suffix! (*i.e., instead of `https://batman.elfhosted.com`, you might be `https://batman.elfhosted.cc`*)
-7. Use [ElfBot][elfbot] to import your ENV vars
+7. (*optionally, if you exported them*) Use [ElfBot][elfbot] to import your ENV vars
 8. If you're using any custom domain names, update your CNAMEs to point to the new cluster suffix
 
 ## FAQ

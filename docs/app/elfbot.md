@@ -62,6 +62,14 @@ Triggers a one-time restart-and-backup of the app's `/config` folder to `/backup
 !!! warning "Backups restart apps"
     Performing a backup will result in an app restart, to ensure consistency
 
+#### Claim Plex Server
+
+ElfBot has a special feature just for Plex instances.. use it to "claim" your Plex server. For details, see the instructions at [Plex][plex]
+
+![Claim Plex server using ElfBot](/images/elfbot-ui-claim-plex.png)
+
+![Claim Plex server using ElfBot](/images/elfbot-ui-claim-plex-details.png)
+
 ### Global Commands
 
 While app-level commands are executed on an individual app basis, ElfBot also provides global commands which affect your entire ElfStack:

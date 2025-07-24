@@ -29,25 +29,6 @@ plugins:
     verbose: true
     include_dir: _includes
   meta-descriptions: # If not provided, auto-generate a description (https://pypi.org/project/mkdocs-meta-descriptions-plugin/)
-  meta:
-  blog:
-    # post_excerpt: required
-    post_url_format: "{date}/{file}" # this allows us to change the post title in future without breaking URLs
-  tags:
-    tags_file: blog/tags.md
-  rss:
-    match_path: blog/posts/.*
-    date_from_meta:
-      as_creation: date
-    categories:
-      - categories
-      - tags
-    abstract_chars_count: -1
-    image: https://elfhosted.com/images/logo.png
-    url_parameters:
-      utm_source: "elfhosted-com"
-      utm_medium: "RSS"
-      utm_campaign: "feed-syndication"
   social:
     # debug: true
     # debug_color: yellow
@@ -216,9 +197,6 @@ nav:
     - Use ElfTerm: how-to/use-elfterm.md
     - FAQ: faq.md
     - ElfBuckz: how-to/spend-elfbuckz.md
-  - Blog: 
-    - blog/index.md
-    - Tags: blog/tags.md
   - Legal:
     - legal/index.md
     - Acceptable Use: legal/acceptable-use.md

@@ -20,11 +20,19 @@ Plex is a power media player with support across a large range of platforms
 {% include 'app.md' %}
 {% include 'app_access.md' %}
 
-## How do I use it?
+## How do I use Plex?
 
-Use [ElfBot][elfbot] to apply your [plex claim](https://www.plex.tv/claim/), and reboot. Then access Plex from your dashboard.
+### Claim Plex Server
 
-You'll be prompted to setup your libraries, etc.
+[ElfBot][elfbot] has a special feature just for Plex instances.. use it to "claim" your Plex server. Launch ElfBot from your apps dashboard, and find the Plex app. Click "..." and "Claim Plex Server"
+
+![Claim Plex server using ElfBot](/images/elfbot-ui-claim-plex.png)
+
+Go to <https://www.plex.tv/claim/>, login with your Plex account, and generate a claim code. Paste the code into the ElfBot UI:
+
+![Claim Plex server using ElfBot](/images/elfbot-ui-claim-plex-details.png)
+
+Your Plex instance will restart. After the restart is complete, and Plex is successfully claimed (takes a few minutes), you'll be prompted to setup your libraries, etc.
 
 ### From media players
 
