@@ -11,11 +11,11 @@ This page outlines some common troubleshooting techniques you'd use to work out 
 
 ## ElfBot
 
-[ElfBot][elfbot] can be used to safely restart your apps, or create backups for later retrieval and archive. 
+[ElfBot][elfbot] can be used to view logs, restart your apps, or create backups for later retrieval and archive. 
 
 ## Kubernetes Dashboard
 
-If ElfBot is a spoon, then [Kubernetes Dashboard][kubernetes-dashboard] is a hammer! Using dashboard, you can examine your pods CPU/RAM usage, node placement, and critically, see the **running, real-time logs** of each container in your pod!
+If ElfBot is a spoon, then [Kubernetes Dashboard][kubernetes-dashboard] is a hammer! Using dashboard, you can examine your pods CPU/RAM usage, node placement, and more.
 
 Deleting a pod using Kubernetes Dashboard will have the same effect as using ElfBot - the pod will be deleted, and Kubernetes will quickly schedule a replacement.
 

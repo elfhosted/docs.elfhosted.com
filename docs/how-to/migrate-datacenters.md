@@ -24,13 +24,13 @@ Due to hardware differences, in this environment, users get 25% of RAM limits, a
 
 ## Process
 
-1. (*optionally*) Force a manual backup, by running `elfbot backup offsite` from [ElfTerm][elfterm], and investigate any failures (*if you care about that particular app's data*)
-2. Use [Kubernetes Dashboard][kubernetes-dashboard] to examine the contents of any `elfbot-<app>` ConfigMaps, and manually copy any custom ENV vars you want to migrate (*ConfigMaps are not part of the backup you did above, they remain with the cluster*)
+1. (*optionally*) Trigger an offsite backup with [ElfBot][elfbot], and investigate any failures (*if you care about that particular app's data*)
+2. Use [ElfBot] to export all apps' environment variables (a global command)
 3. Use https://speed.elfhosted.com to identify your ideal datacenter
 4. Add the "[Elf-spedition](https://store.elfhosted.com/product/regional-relocation)" subscription to your account, picking the appropriate datacenter
 5. Your apps will be turned off on the primary cluster, and created on the target cluster - this may take 10-15 minutes, depending on the volume of data restored from offsite backup
 6. Your apps will run from the new cluster, with a new domain suffix! (*i.e., instead of `https://batman.elfhosted.com`, you might be `https://batman.elfhosted.cc`*)
-7. Re-apply any custom ENV vars using [ElfBot][elfbot] (*you need to run `elfbot env <app>` at least once to create the ConfigMap in the new cluster*)
+7. Use [ElfBot][elfbot] to import your ENV vars
 8. If you're using any custom domain names, update your CNAMEs to point to the new cluster suffix
 
 ## FAQ
