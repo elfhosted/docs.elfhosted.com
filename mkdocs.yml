@@ -133,6 +133,7 @@ nav:
       - Privatebin: app/privatebin.md
       - PairDrop: app/pairdrop.md
       - PlexTraktSync: app/plextraktsync.md
+      - PlexyTrack: app/plexytrack.md
       - RCloneFM: app/rclonefm.md
       - RCloneUI: app/rcloneui.md
       - Recyclarr: app/recyclarr.md

@@ -1,6 +1,6 @@
 ---
 title: Elf Hosted OpenBooks 🧝
-slug: openbooks
+slug: Openbooks
 description: Allows you to download ebooks from irc.irchighway.net quickly and easily.
 upstream: https://github.com/evan-buss/openbooks
 sponsorships:
