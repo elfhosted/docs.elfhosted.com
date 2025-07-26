@@ -101,6 +101,7 @@ nav:
     - Manage Downloads:
       - AirDC++: app/airdcpp.md
       - cli_debrid: app/cli-debrid.md
+      - Cleanuparr: app/cleanuparr.md
       - Debridav: app/debridav.md
       - Decypharr: app/decypharr.md
       - Flaresolverr: app/flaresolverr.md
