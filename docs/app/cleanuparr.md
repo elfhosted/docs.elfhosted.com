@@ -6,7 +6,7 @@ works_with:
 - Radarr
 - Sonarr
 - Decypharr
-upstream: https://github.com/Cleanuparr/Cleanuparr/
+upstream: https://cleanuparr.github.io/Cleanuparr/docs/
 sponsorship: 
 - name: GitHub Sponsors
   uri: https://github.com/sponsors/Cleanuparr
