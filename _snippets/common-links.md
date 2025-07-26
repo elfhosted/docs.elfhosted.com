@@ -10,6 +10,7 @@
 [booklore]:             /app/booklore/
 [calibre]:              /app/calibre/
 [calibre-web]:          /app/calibre-web/
+[cleanuparr]:           /app/cleanuparr/
 [cli-debrid]:           /app/cli-debrid/
 [channelsdvr]:          /app/channelsdvr/
 [cinesync]:             /app/cinesync/
