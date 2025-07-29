@@ -72,7 +72,7 @@ If you have both StremThru **and** MediaFlowProxy, we'll default your AIOStreams
 ```
 elfbot env aiostreams FORCE_PROXY_ID=mediaflow
 elfbot env aiostreams FORCE_PROXY_URL=http://mediaflow-proxy:8888
-elfbot env aiostreams FORCE_PUBLIC_PROXY_HOST="<your mediaflow proxy hostname without https:// infront>"
+elfbot env aiostreams FORCE_PROXY_PUBLIC_URL="https://<your mediaflow proxy hostname>"
 ```
 
 #### Using an external proxy
