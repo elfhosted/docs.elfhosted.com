@@ -7,6 +7,7 @@
 
 # Page renames
 /app/xtremio /app/youriptv 301!
+/app/annatar /app/aiostreams 301!
 /open/sponsorship /sponsorship 301!
 
 # Guide refactors
