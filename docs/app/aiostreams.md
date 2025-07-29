@@ -82,9 +82,7 @@ If you prefer to use an external (non-ElfHosted) instance of either StremThru or
 ```
 FORCE_PROXY_ID: stremthru
 FORCE_PROXY_URL: https://mystremthru.mickeymouse.com
-FORCE_PUBLIC_PROXY_HOST: mystremthru.mickeymouse.com
-FORCE_PUBLIC_PROXY_PORT: 443         # already the default
-FORCE_PUBLIC_PROXY_PROTOCOL: "https" # already the default
+FORCE_PROXY_PUBLIC_URL: "https://mystremthru.mickeymouse.com"
 ```
 
 {% include 'app_footer.md' %}
