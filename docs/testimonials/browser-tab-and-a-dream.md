@@ -14,7 +14,7 @@ I’d hop between random streaming sites, dodging fake “Play” buttons like I
 
 Eventually, I discovered Stremio, and everything changed. Suddenly, things were smooth.... organised. I felt like I’d upgraded from a tin can phone to a spaceship. But there were still limits. I wanted more control, more quality, more permanence.
 
-So I moved on to a seedbox. And wow, what a jump. I was running my own setup with [Radarr[radarr]] and [Sonarr][sonarr], grabbing content and feeding it into [Plex][plex]. It was fast, powerful, and made me feel like I had my own little digital cinema.
+So I moved on to a seedbox. And wow, what a jump. I was running my own setup with [Radarr][radarr] and [Sonarr][sonarr], grabbing content and feeding it into [Plex][plex]. It was fast, powerful, and made me feel like I had my own little digital cinema.
 
 But… there were still downsides.
 
