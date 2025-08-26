@@ -10,7 +10,6 @@ upstream: https://jellyfin.org
 links:
 - name: subreddit
   uri: https://www.reddit.com/r/jellyfin/
-price: 0.15
 sponsorship: 
 - name: Open Collective
   uri: https://opencollective.com/jellyfin
@@ -41,10 +40,15 @@ Disable any form of chapter analysis or trickplay, to avoid unnecessary wastage 
 
 ![](/images/jellyfin-setup-1.png)
 
-
 ### Enable Hardware transcoding
 
-Our nodes support Intel QuickSync for Video (QSV). Enable this under the admin dashboard's Playback settings.
+Our nodes support either Intel QuickSync for Video (QSV) (*EU datacenter*) or Nvidia (*US datacenters*). Enable this under the admin dashboard's Playback settings.
+
+#### EU Datacenters
+
+The following options have been tested on the QSV hardware in the EU datacenter:
+
+* Enable VPP Tone mapping: **Checked**
 
 ### From media players
 
