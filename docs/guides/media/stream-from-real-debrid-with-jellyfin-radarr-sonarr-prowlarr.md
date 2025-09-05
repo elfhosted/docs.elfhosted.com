@@ -105,7 +105,7 @@ That's it! You've got the basic plumbing in place for "unlimited storage" from R
 ## How do I get help?
 
 1. For general use of the [individual tools](/apps/), refer to the each app's upstream site
-2. For specific support re your ElfHosted configuration / account, see the [ElfHosted support options](/get-help/
+2. For specific support re your ElfHosted configuration / account, see the [ElfHosted support options](/get-help/)
 
 --8<-- "common-links.md"
 
