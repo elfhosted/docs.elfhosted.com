@@ -33,14 +33,14 @@ Want to check it out? There's a public demo instance at <https://demo.immich.app
 
 ### Attach storage
 
-Ensure you have a suitable BYO storage mount attached (confirm the location is browsable in [FileBrowser][filebrowser]) - a [Hetzner Storagebox][storagebox] is a good option if you don't already have cloud storage.
+Ensure you have a suitable BYO storage [rclone-mounted][rclone] (confirm the location is browsable in [FileBrowser][filebrowser]) - a [Hetzner Storagebox][storagebox] is a good option if you don't already have cloud storage.
 
 ### Configure 
 
 Use ElfBot to configure Immich to point to your mounted storage location, by running something like:
 
 ```
-elfbot env immich IMMICH_MEDIA_LOCATION=/storage/storagebox-a/photos
+elfbot env immich IMMICH_MEDIA_LOCATION=/storage/rclone/storagebox/photos
 ```
 
 {% include 'app_footer.md' %}
