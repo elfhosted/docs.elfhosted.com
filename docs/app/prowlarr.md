@@ -36,13 +36,39 @@ It integrates seamlessly with [Lidarr][lidarr], [Mylar][mylar], [Radarr][radarr]
 
 ## How do I use it?
 
-### Adding torrentio
+### Internal Indexers
 
-There are two custom indexers pre-provisioned with Prowlarr.. one is for the public Torrentio, which is significantly rate-limited, and the other is for the ElfHosted internal instance, which is free and unrestricted to all ElfHosted apps.
+ElfHosted maintain several internal indexers which are pre-configured in Prowlarr. To add these manually (if your subscription pre-dates their pre-configuration), follow the instructions below:
 
-Search for "torrentio" to find and setup the indexers:
+#### ElfZilean
 
-![](/images/prowlarr-setup-torrentio.png)
+ElfZilean is an internal instance of Zilean which ingests not only DMM pubicly-shared hashlists, but also the hashes of every other ElfHosted users' RealDebrid library, providing exclusive internal hashes not available on public indexers.
+
+Add an indexerer named `ElfZilean` as a `Generic Torznab` indexer, as follows:
+
+* URL: `http://elfhosted-internal.zilean/torznab/`
+* API: `/api`
+
+!!! note "Remove year from search query"
+    Due to a peculiarity of the Zilean Torznab API, you'll need to enable `Remove year from search query` in the synced indexer in Radarr.
+
+#### ElfBitMagnet
+
+ElfBitMagnet is an internal instance of BitMagnet which ingests torrent hashes from DHT, classifies content using TMBD, and provides a TorzNab interface for internal querying.
+
+Add an indexerer named `ElfBitMagnet` as a `Generic Torznab` indexer, as follows:
+
+* URL: `https://elfhosted-internal.bitmagnet/`
+* API: `/torznab`
+
+#### ElfStremThru
+
+ElfStremThru is an internal instance of StremThru which *also* ingests torrent hashes from DMM, but additionally caches StremThru searches from our public addons, as well as some upstream hashes indexed using DHT.
+
+Add an indexer named `ElfStremThru` as a `Generic Torznab` indexer, as follows:
+
+* URL: `https://elfhosted-internal.stremthru/v0/torznab`
+* API: `<leave empty>`
 
 ### Enabling apps
 
