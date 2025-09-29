@@ -4,6 +4,8 @@
 # Fetch git history so that we get last-updated timestamps
 # git fetch --unshallow
 
+PYTHON_VERSION = "3.13"
+
 set -e # abort on fail
 set -x # debug failed builds
 

@@ -1,5 +1,4 @@
 [build]
   command = "scripts/build.sh"
-
-[build.environment]
-  PYTHON_VERSION = "3.11"   # or "3.12"
+  publish = "site/"
+  environment = { PYTHON_VERSION = "3.13" }
