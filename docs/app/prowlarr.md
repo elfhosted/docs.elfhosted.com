@@ -38,7 +38,7 @@ It integrates seamlessly with [Lidarr][lidarr], [Mylar][mylar], [Radarr][radarr]
 
 ### Internal Indexers
 
-ElfHosted maintain several internal indexers which are pre-configured in Prowlarr. To add these manually (if your subscription pre-dates their pre-configuration), follow the instructions below:
+ElfHosted maintain several internal indexers which are pre-configured in Prowlarr. To add these manually (*if your subscription pre-dates their pre-configuration*), follow the instructions below:
 
 #### ElfZilean
 

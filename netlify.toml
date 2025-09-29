@@ -1,0 +1,5 @@
+[build]
+  command = "scripts/build.sh"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"   # or "3.12"
