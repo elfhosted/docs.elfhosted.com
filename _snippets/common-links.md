@@ -105,6 +105,7 @@
 [webdav]:               /app/webdav/
 [youriptv]:             /app/youriptv/
 [zurg]:                 /app/zurg/
+[youtarr]:              /app/youtarr/
 [connect-apps]:         /how-to/connect-apps/
 [troubleshoot]:         /how-to/troubleshoot/
 [store/storage]:        https://store.elfhosted.com/product-category/storage/

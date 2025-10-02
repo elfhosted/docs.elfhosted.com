@@ -114,6 +114,7 @@ nav:
       - RDT Client: app/rdtclient.md
       - Riven: app/riven.md 
       - SABnzbd: app/sabnzbd.md
+      - YouTarr: app/youtarr.md
       - Zurg: app/zurg.md
   
     - Tools:
@@ -175,9 +176,9 @@ nav:
           - RealDebrid: guides/media/jellyfin-realdebrid-aars.md
       - Plex:
         - plex_debrid:
-            Real-Debrid: guides/media/stream-from-real-debrid-with-plex.md
+            - Real-Debrid: guides/media/stream-from-real-debrid-with-plex.md
         - Radarr & Sonarr:
-          - RealDebrid: guides/media/plex-realdebrid-aars.md          
+          - Real-Debrid: guides/media/plex-realdebrid-aars.md          
         - Riven:
           - Real-Debrid: guides/media/stream-from-real-debrid-with-plex-riven.md
           - AllDebrid: guides/media/plex-alldebrid-riven.md
