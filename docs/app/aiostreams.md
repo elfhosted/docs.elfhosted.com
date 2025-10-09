@@ -38,10 +38,10 @@ We preconfigure AIOStreams with your bundled MediaFlowProxy or StremThru, so usu
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sYOsZ4AUN-Y?si=TzDsDisFvPPergQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Use [ElfBot] to set the `STREMTHRU_STORE_AUTH` ENV var for Stremthru, to something like `spiderman:ilovemaryjane`, and then use that same value (`spiderman:ilovemaryjane`) as your proxy credentials in AIOStreams. Leave the rest of the proxy options as pre-configured.
+Use [ElfBot] to set the `STREMTHRU_PROXY_AUTH` ENV var for Stremthru, to something like `spiderman:ilovemaryjane`, and then use that same value (`spiderman:ilovemaryjane`) as your proxy credentials in AIOStreams. Leave the rest of the proxy options as pre-configured.
 
 ``` title="Quick-paste into StremThru's environment variables using ElfBot"
-STREMTHRU_STORE_AUTH=spiderman:ilovemaryjane
+STREMTHRU_PROXY_AUTH=spiderman:ilovemaryjane
 ```
 
 #### MediaFlow Proxy
