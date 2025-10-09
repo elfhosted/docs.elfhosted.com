@@ -30,8 +30,8 @@ To use Premiumize, you'll need an Premiumize account. ElfHosted currently have 1
 
 Use [ElfBot][elfbot] to set the following environment variables:
 
-```
-elfbot env debridav PREMIUMIZE_API_KEY=<your api key>
+``` title="Quick-paste into Debridav's environment variables using ElfBot"
+PREMIUMIZE_API_KEY=<your api key>
 ```
 
 #### Radarr / Sonarr
@@ -51,17 +51,17 @@ To use EasyNews, you'll need an EasyNews account. You can get one for [as little
 
 Use [ElfBot][elfbot] to set the following environment variables:
 
-```
-elfbot env debridav DEBRIDAV_DEBRIDCLIENTS=easynews
-elfbot env debridav EASYNEWS_USERNAME=<your username>
-elfbot env debridav EASYNEWS_PASSWORD=<your password>
+``` title="Quick-paste into Debridav's environment variables using ElfBot"
+DEBRIDAV_DEBRIDCLIENTS=easynews
+EASYNEWS_USERNAME=<your username>
+EASYNEWS_PASSWORD=<your password>
 ```
 
 !!! tip "Using Premiumize and EasyNews simultaneously"
     It's possible to use both Premiumize **and** EasyNews, if you set:
 
-    ```
-    elfbot env debridav DEBRIDAV_DEBRIDCLIENTS=premiumize,easynews
+    ``` title="Quick-paste into Debridav's environment variables using ElfBot"
+    DEBRIDAV_DEBRIDCLIENTS=premiumize,easynews
     ```
 
 #### Prowlarr
@@ -91,14 +91,14 @@ Unless you're using Debridav exclusively, you'll now have both a usenet (*ElfEas
 
 To use Debridav with RealDebrid, you'll need to set the `DEBRIDAV_DEBRIDCLIENTS` env var accordingly, like this:
 
-```
-elfbot env debridav DEBRIDAV_DEBRIDCLIENTS=real_debrid
+``` title="Quick-paste into Debridav's environment variables using ElfBot"
+DEBRIDAV_DEBRIDCLIENTS=real_debrid
 ```
 
 You'll also need to set your RD API key, like this:
 
-```
-elfbot env debridav REAL-DEBRID_APIKEY=<your key>
+``` title="Quick-paste into Debridav's environment variables using ElfBot"
+REAL-DEBRID_APIKEY=<your key>
 ```
 
 ### Where's my content?

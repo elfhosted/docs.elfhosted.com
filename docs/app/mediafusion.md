@@ -31,8 +31,8 @@ Since MediaFusion v4, every instance **must** include an `api_password` ENV var,
 
 Every ElfHosted instance defaults its API password to `changemeelfie`, but you can (and should) reset this using [ElfBot][elfbot], by running:
 
-```
-elfbot env mediafusion api_password=whateveryouwant
+``` title="Quick-paste into MediaFusion's environment variables using ElfBot"
+api_password=whateveryouwant
 ```
 
 ### Integrating with Jackett
@@ -41,14 +41,9 @@ Optionally, you can use a bundled [Jackett][jackett] instance to provide additio
 
 Configure your Jackett, and then copy your API key, and provide it to MediaFusion with:
 
-```
-elfbot env mediafusion jackett_api_key=<api key here>
-```
-
-Finally, enable Jackett scraping with:
-
-```
-elfbot env mediafusion is_scrap_from_jackett=true
+``` title="Quick-paste into MediaFusion's environment variables using ElfBot"
+jackett_api_key=<api key here>
+is_scrap_from_jackett=true
 ```
 
 {% include 'app_footer.md' %}

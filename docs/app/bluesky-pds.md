@@ -34,23 +34,19 @@ There are 3 values you need to set to properly secure your instance. Placeholder
 
 Values to be configured are:
 
-* `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`: Generate a suitable value with openssl)
+* `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`: Generate a suitable value with openssl
 * `PDS_JWT_SECRET`: use a strong password
 * `PDS_ADMIN_PASSWORD`: use a strong password
 
-The values can be applied using ElfBot, as follows (execute each one line at a time):
+The values can be applied using ElfBot, as follows:
 
-``` title="example secure config"
-elfbot env bluesky-pds PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX=bb1ed941a5a004f007441bd5bb297002f4e533fadba48e429f8350249315cf0c
-elfbot env bluesky-pds PDS_JWT_SECRET=changemeelfie
-elfbot env bluesky-pds PDS_ADMIN_PASSWORD=changemeelfie
+``` title="Quick-paste into BlueSky PDS's environment variables using ElfBot"
+PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX=bb1ed941a5a004f007441bd5bb297002f4e533fadba48e429f8350249315cf0c
+PDS_JWT_SECRET=changemeelfie
+PDS_ADMIN_PASSWORD=changemeelfie
 ```
 
-After setting all 3 values, remove any existing databases / config, by running:
-
-```bash
-elfbot reset bluesky-pds --yesiamsure
-```
+After setting all 3 values, remove any existing databases / config, by doing a reset on BlueSky PDS, using ElfBot
 
 ### Setup email
 
@@ -68,9 +64,9 @@ The following example sets:
 * SMTP port: `587`
 * SMTP from address: `bsky@mg.funkypenguin.co.nz` (*same in this case but yours may be different*)
 
-``` title="example email config"
-elfbot env bluesky-pds PDS_EMAIL_SMTP_URL=smtp://bsky%40mg.funkypenguin.co.nz:password@smtp.mailgun.org:587
-elfbot env bluesky-pds PDS_EMAIL_FROM_ADDRESS=bsky@mg.funkypenguin.co.nz
+``` title="Quick-paste into BlueSky PDS's environment variables using ElfBot"
+PDS_EMAIL_SMTP_URL=smtp://bsky%40mg.funkypenguin.co.nz:password@smtp.mailgun.org:587
+PDS_EMAIL_FROM_ADDRESS=bsky@mg.funkypenguin.co.nz
 ```
 
 Paste each elfbot command in, one-at-a-time. PDS will restart after each entry.
@@ -126,18 +122,18 @@ Once the DNS entry is added, either wait for the bluesky infrastruture to recogn
 !!! question "Why use object storage?"
     You may want to migrate your PDS off of ElfHosted in the future. Although you **could** simply store all your media content within your ElfHosted `/config` storage, this can (1) run out of space, and (2) be slow and time-consuming to relocate if you migrate. If you configure PDS for object storage however, then all the media is **already** on object storage under your control, and doesn't need to be migrated alongside your databases / account data.
 
-PDS can use either local storage or S3 storage, but it won't do both, so in order to use object storage, you need to disable local storage, by setting `PDS_BLOBSTORE_DISK_LOCATION` to null, using `elfbot env bluesky-pds PDS_BLOBSTORE_DISK_LOCATION=`
+PDS can use either local storage or S3 storage, but it won't do both, so in order to use object storage, you need to disable local storage, by setting `PDS_BLOBSTORE_DISK_LOCATION` to null, using `PDS_BLOBSTORE_DISK_LOCATION=`
 
 Then apply the following with your own object storage config, to transition to object storage:
 
-```
-elfbot env bluesky-pds PDS_BLOBSTORE_DISK_LOCATION=''
-elfbot env bluesky-pds PDS_BLOBSTORE_S3_BUCKET=bucket_name
-elfbot env bluesky-pds PDS_BLOBSTORE_S3_REGION=us-east-1
-elfbot env bluesky-pds PDS_BLOBSTORE_S3_ENDPOINT=https://s3.us-east-1.amazonaws.com
-elfbot env bluesky-pds PDS_BLOBSTORE_S3_FORCE_PATH_STYLE=true
-elfbot env bluesky-pds PDS_BLOBSTORE_S3_ACCESS_KEY_ID=secret
-elfbot env bluesky-pds PDS_BLOBSTORE_S3_SECRET_ACCESS_KEY=secret
+``` title="Quick-paste into BlueSky PDS's environment variables using ElfBot"
+PDS_BLOBSTORE_DISK_LOCATION=''
+PDS_BLOBSTORE_S3_BUCKET=bucket_name
+PDS_BLOBSTORE_S3_REGION=us-east-1
+PDS_BLOBSTORE_S3_ENDPOINT=https://s3.us-east-1.amazonaws.com
+PDS_BLOBSTORE_S3_FORCE_PATH_STYLE=true
+PDS_BLOBSTORE_S3_ACCESS_KEY_ID=secret
+PDS_BLOBSTORE_S3_SECRET_ACCESS_KEY=secret
 ```
 
 ### Logs

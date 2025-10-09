@@ -28,8 +28,8 @@ Jackettio relies on [Jackett][jackett] for returning results, so start with addi
 
 Jackettio is configured using environment variables. While most parameters are pre-configured, the Jackett API key will vary per-user, and must be manually configured. Use [ElfBot][elfbot] to set your environment, by pasting a variation of the following into the [Filebrowser][filebrowser] console:
 
-```
-elfbot env jackettio JACKETT_API_KEY=myapikeyisawesome
+``` title="Quick-paste into Jackettio's environment variables using ElfBot"
+JACKETT_API_KEY=myapikeyisawesome
 ```
 
 !!! tip

@@ -68,8 +68,8 @@ Here are the transcodes we'll automatically terminate:
 
 You trigger a database repair in Plex by setting the `REPAIR_DB_ON_START` environment variable to `true` with ElfBot, like this:
 
-```bash
-elfbot env plex REPAIR_DB_ON_START=true
+``` title="Quick-paste into Plex's environment variables using ElfBot"
+REPAIR_DB_ON_START=true
 ```
 
 Plex will restart, and thereafter on every restart (*until you set it to `false`*), it will run through a DBRepair process which has been known to fix database issues / inconsistencies.
@@ -104,7 +104,11 @@ Several app integrations require a Plex "authentication token". The simplest way
 
 By default Plex is configured to **not** automatically empty its trash. This default primarily benefits symlink-based, "[Infinite Streaming](/guides/media/)" users, who would loose their entire library of content if their debrid service was disconnected for a period.
 
-Users may opt back into automatically clearing Plex's trash by overriding an environment variable (*`PLEX_PREFERENCE_7` in our case*), using [ElfBot][elfbot]. To enable automatic clearing of Plex's trash, use [FileBrowser][filebrowser]'s console, and run `elfbot env plex PLEX_PREFERENCE_7=autoEmptyTrash=1`
+Users may opt back into automatically clearing Plex's trash by overriding an environment variable (*`PLEX_PREFERENCE_7` in our case*), using [ElfBot][elfbot]
+
+``` title="Quick-paste into Plex's environment variables using ElfBot"
+PLEX_PREFERENCE_7=autoEmptyTrash=1`
+```
 
 ### Test your speed
 

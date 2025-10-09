@@ -15,7 +15,11 @@ However, to bulk-transfer files to / from [ElfStorage][elfstorage], you'll need 
 
 If you purchase a standalone WebDAV Export, you'll be prompted to choose an initial password (*bundled users are not prompted*), by running ` Your username is preset to your existing, ElfHosted, username. Your WebDAV url will be `https://<username>-webdav.elfhosted.com`
 
-You can reset your password using [ElfBot][elfbot], by running `elfbot env webdav WEBDAV_PASSWORD=yoursekritpassword`
+You can reset your password using [ElfBot][elfbot], like this:
+
+``` title="Quick-paste into WebDav's environment variables using ElfBot"
+WEBDAV_PASSWORD=yoursekritpassword
+```
 
 You can test the above with a web browser, but for robust file transfer, use one of the options below:
 

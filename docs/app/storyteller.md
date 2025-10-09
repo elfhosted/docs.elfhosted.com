@@ -42,8 +42,8 @@ Storyteller uses the `STORYTELLER_SECRET_KEY` environment variable to secure its
 
 To set your `STORYTELLER_SECRET_KEY`, generate a strong random string using or [1Password's online random password generator](https://1password.com/password-generator/), or by running `openssl rand -base64 32`
 
-```
-elfbot env storyteller STORYTELLER_SECRET_KEY=<your string here>
+``` title="Quick-paste into StoryTeller's environment variables using ElfBot"
+STORYTELLER_SECRET_KEY=<your string here>
 ```
 
 Storyteller will restart, and you can now proceed to setup your admin account.

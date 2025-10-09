@@ -127,106 +127,6 @@ Unlike apps (above) this option triggers a backup of all your symlinks. There's 
 
 Triggers an immediate offsite backup (*usually these run every 24 hours*). Usually used in combination with bulk ENV var exports to prepare for a datacenter migration.
 
-
-### CLI Commands (deprecated)
-
-The original ElfBot is still available as a limited CLI tool in ElfTerm or Filebrowser, like this:
-
-![ElfBot in FileBrowser console](/images/elfbot-filebrowser-console.png)
-
-Run ElfBot like this:
-
-```bash
-elfbot <command> <arguments>
-```
-
-For example, to restart plex...
-
-```
-elfbot restart plex
-```
-
-#### How to stop / suspend an app
-
-You may need to turn an app off temporaily to adjust its config, or to perform a restore from backup. Run `elfbot pause <app>` (*`<app>` should match the name of a folder under `/config`*), and ElfBot will shutdown the app, and wait for 5 min, before starting the app again.
-
-#### How to restart an app
-
-ElfBot can restart your app. Run `elfbot restart <app>` (*`<app>` should match the name of a folder under `/config`*), and ElfBot will instantly trigger an app restart.
-
-Occasionally circumstances will prevent a graceful restart of an app (*node failure, kernel bug, etc*). In such cases, a regular `elfbot restart` won't work on the app, its pod will stay in a terminating state.
-
-In this event, the only recourse is to "force restart" the app - if the app hasn't properly saved its data, you may loose data as a result, but in the case of a stuck pod, you have no other recourse.
-
-To "force restart" an app, run `elfbot restart <app> --force --yesiamsure` - ElfBot will instantly remove the pod (*rather than waiting for it to terminate*), and a replacement pod will be scheduled.
-
-!!! tip "Restarting all at once"
-    You can use `elfbot restart all` to restart **all** your apps at the same time (*although it's hard to imagine a situation where this would be required*)
-
-#### How to reset an app
-
-Need to reset an app to defaults? Run `elfbot reset <app> --yesiamsure` to perform the reset. ElfBot will restart your app, and remove its config from `/config`, resulting in a fresh bootstrap or a clean install.
-
-!!! warning
-    This command will result in data loss. There are no further confirmations beyond `--yesiamsure`. If you're uncertain, perform a backup of your app before resetting (*below*).
-
-!!! danger
-    You can also use `all` here, as in `elfbot reset all` - but be aware that it'll do exactly what it says, and wipe **ALL** of your app data! (*not your ElfStorage though!*). There's no going back from this!
-
-#### How to backup an app
-
-In order to safely backup an app, the app can't be running. ElfBot can trigger a restart of your app, and before the app actually starts, make a backup of its config folder to `/storage/elfstorage/backup/<app name>-<timestamp>`.
-
-Run:
-
-```bash
-elfbot backup <app>
-```
-
-To perform the backup!
-
-Here's an example:
-
-![ElfBot backup result](/images/elfbot-backup-1.png)
-
-And here's the resulting backup:
-
-![ElfBot backup result](/images/elfbot-backup-2.png)
-
-#### How to Claiming a Plex server
-
-After you install [Plex][plex], if you find that you're just presented with a "web player", you'll need to "claim" it against your Plex account, by grabbing a claim ID from plex.tv/claim/. Claim your plex server using ElfBot by running:
-
-```bash
-elfbot claim plex <token>
-```
-
-After the claim is made, you'll need to restart plex. To restart Plex, and access your freshly-claimed instance, run:
-
-```bash
-elfbot restart plex
-```
-
-#### How to set an ENV var for an app
-
-If you need to set a custom ENV var for an app (*for [VaultWarden][vaultwarden]'s `ADMIN_TOKEN`, for example*), you can use ElfBot to apply it to the app, by running:
-
-```bash
-elfbot env <app> <key>=<value>
-```
-
-For example:
-
-```bash
-elfbot env vaultwarden ADMIN_TOKEN=thisisnotasecuretoken
-```
-
-Be aware that this process has some limitations, namely:
-
-1. You can't see the ENV vars you've already set
-2. You can't delete an ENV var, but you can set its value to nothing ('')
-3. Only the apps below are supported (*Seek [#elf-help][elf-help] if you need an app added*):
-
 #### How to manage symlinks
 
 If you've attached read-only external storage, which is managed outside of your ElfHosted tools (*[Real-Debrid][real-debrid] with [Debrid Media Manager](https://debridmediamanager.com/), for example*), then you may find that you have content in `/storage/<provider>` which you can't change (*rename, move, organize, etc*).
@@ -237,7 +137,7 @@ ElfBot can help with this by creating a symlink to the remote content, in `/stor
 
 #### Manually creating symlinks
 
-To perform a symlink import, run `elfbot symlink <path to read-only storage>`, or navigate using FileBrowser to a specific folder, and run `elfbot symlink here` to import from the current directory specifically. 
+To perform a symlink import, use [ElfTerm][elfterm] to run `elfbot symlink <path to read-only storage>`, or navigate using FileBrowser to a specific folder, and run `elfbot symlink here` to import from the current directory specifically. 
 
 ElfBot will symlink any **new**  content in the target directory to `/storage/symlinks/import/<directory>`. After this, you point the Aars at the `/storage/symlinks/import/` path, and tell them to perform an interactive import.
 
@@ -258,15 +158,5 @@ See Aar-specific details here:
 
 * [Radarr](/app/radarr/#import-existing-remote-media)
 * [Sonarr](/app/sonarr/#import-existing-remote-media)
-
-#### Finding broken symlinks
-
-If the source of your symlinks become unavailable (*is removed from your storage provider for any reason*), the symlink will remain, but you'll be unable to access the content, and the arrs won't notice that it's missing.
-
-To find these "broken symlinks", run `elfbot symlink report-broken` - you'll find a report generated at `/storage/symlinks/report.txt `
-
-#### Delete broken symlinks
-
-To bulk-delete all broken symlinks (*so the aars can re-search for them*), run `elfbot symlink delete-broken`. Only valid symlinks will survive!
 
 --8<-- "common-links.md"

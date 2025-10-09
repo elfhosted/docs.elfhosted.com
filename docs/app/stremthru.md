@@ -32,14 +32,14 @@ You can serve multiple, different users from StremThru, or simply use a common u
 
 Users are defined by using [ElfBot][elfbot] to set the `STREMTHRU_PROXY_AUTH` environment variable, as in the following example, creating a user `batman` with password `supermanisaweenie`
 
-```
-elfbot env stremthru STREMTHRU_PROXY_AUTH=batman:supermanisaweenie
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+STREMTHRU_PROXY_AUTH=batman:supermanisaweenie
 ```
 
 Or, a more comprehensive example, defining passwords for users `batman`, `spiderman`, and `lexluthor`:
 
-```
-elfbot env stremthru STREMTHRU_PROXY_AUTH=batman:supermanisaweenie,spiderman:ppmjforever,lexluthor:iwishihadhair
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+STREMTHRU_PROXY_AUTH=batman:supermanisaweenie,spiderman:ppmjforever,lexluthor:iwishihadhair
 ```
 
 !!! note
@@ -57,14 +57,14 @@ Separately from your **users**, StremThru thinks of debrid providers as "stores"
 
 Once again, a simple example for user `batman` with RealDebrid API key `abcdef123456`...
 
-```
-elfbot env stremthru STREMTHRU_STORE_AUTH=batman:realdebrid:abcdef123456
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+STREMTHRU_STORE_AUTH=batman:realdebrid:abcdef123456
 ```
 
 And a more complicated example, where `batman` uses RealDebrid with API key `abcdef123456`, `spiderman` uses AllDebrid with API key `ghijkl56789`, and `lexluthor` uses TorBox with API key `98765dcba`:
 
-```
-elfbot env stremthru STREMTHRU_STORE_AUTH=batman:realdebrid:abcdef123456,spiderman:alldebrid:ghijkl56789,lexluthor:torbox:98765dcba
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+STREMTHRU_STORE_AUTH=batman:realdebrid:abcdef123456,spiderman:alldebrid:ghijkl56789,lexluthor:torbox:98765dcba
 ```
 
 !!! note
@@ -138,9 +138,9 @@ For Trakt support, you'll need your own Trakt OAuth credentials (*free but you h
 
 Create your OAuth credentials here, and set your redirec URI to <https://<YOUR STREMTHRU URL>/auth/trakt.tv/callback>. Use ElfBot to set `STREMTHRU_INTEGRATION_TRAKT_CLIENT_ID` and `STREMTHRU_INTEGRATION_TRAKT_CLIENT_SECRET` like this:
 
-```bash
-elfbot env stremthru STREMTHRU_INTEGRATION_TRAKT_CLIENT_ID=your-oauth-client-id
-elfbot env stremthru STREMTHRU_INTEGRATION_TRAKT_CLIENT_SECRET=your-oauth-client-secret
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+STREMTHRU_INTEGRATION_TRAKT_CLIENT_ID=your-oauth-client-id
+STREMTHRU_INTEGRATION_TRAKT_CLIENT_SECRET=your-oauth-client-secret
 ```
 
 {% include 'app_footer.md' %}

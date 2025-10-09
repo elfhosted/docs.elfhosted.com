@@ -39,8 +39,8 @@ Ensure you have a suitable BYO storage [rclone-mounted][rclone] (confirm the loc
 
 Use ElfBot to configure Immich to point to your mounted storage location, by running something like:
 
-```
-elfbot env immich IMMICH_MEDIA_LOCATION=/storage/rclone/storagebox/photos
+``` title="Quick-paste into Immich's environment variables using ElfBot"
+IMMICH_MEDIA_LOCATION=/storage/rclone/storagebox/photos
 ```
 
 {% include 'app_footer.md' %}

@@ -26,8 +26,8 @@ PeerTube won't start without a `PEERTUBE_SECRET` ENV var, which needs to be set 
 
 Generate a 64-character hexidecimal string (*`openssl rand -hex 32` for example*), and then applying it to PeerTube using [ElfBot][elfbot]:
 
-```
-elfbot env peertube PEERTUBE_SECRET=whateveryousetmakesureits64charshexidecimalonly
+``` title="Quick-paste into PeerTube's environment variables using ElfBot"
+PEERTUBE_SECRET=whateveryousetmakesureits64charshexidecimalonly
 ```
 
 {% include 'app_footer.md' %}

@@ -32,7 +32,11 @@ And here's a demo gif:
 
 ## How to use List-Sync
 
-At the least, you'll need to give List-Sync your Overseerr / Jellyseerr API key, by running `elfbot env listsync OVERSEERR_API_KEY=<your key here>`
+At the least, you'll need to give List-Sync your Overseerr / Jellyseerr API key:
+
+``` title="Quick-paste into ListSync's environment variables using ElfBot"
+OVERSEERR_API_KEY=<your key here>`
+```
 
 You can, at this point, run List-Sync in interactive mode, or you can drive it declaritively, by setting any of the following ENV vars, using the same [ElfBot][elfbot] syntax:
 

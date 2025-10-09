@@ -29,65 +29,18 @@ Comet is an innovative new Stremio addon (a torrentio alternative) which differe
 
 ## How do I use it
 
-### Environment variables
+### Proxy Streaming (optional)
 
-Comet is configured using environment variables. Use [Kubernetes Dashboard][kubernetes-dashboard] to set your environment variables.
-
-Here's a helpful video:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/WEGKI7ppq9E?si=r0u_JfR1VWyj0HoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-### With Prowlarr
-
-Paste the following into [Kubernetes Dashboard][kubernetes-dashboard] to create a new ConfigMap resource (`elfbot-comet`) is the same ConfigMap that would get created/updated if you used [ElfBot][elfbot] to do this, but because of the advanced syntax of some of the values, editing a ConfigMap is the better approach.
-
-```
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: elfbot-comet
-data:
-  INDEXER_MANAGER_TYPE: prowlarr
-  INDEXER_MANAGER_URL: http://prowlarr:9696
-  INDEXER_MANAGER_API_KEY: <YOUR PROWLARR API KEY>
-  INDEXER_MANAGER_INDEXERS: '["EXAMPLE1_CHANGETHIS", "EXAMPLE2_CHANGETHIS"]'
-```
-
-### With Jackett
-
-Paste the following into [Kubernetes Dashboard][kubernetes-dashboard] to create a new ConfigMap resource (`elfbot-comet`) is the same ConfigMap that would get created/updated if you used [ElfBot][elfbot] to do this, but because of the advanced syntax of some of the values, editing a ConfigMap is the better approach.
-
-```
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: elfbot-comet
-data:
-  INDEXER_MANAGER_TYPE: jackett
-  INDEXER_MANAGER_URL: http://jackett:9117
-  INDEXER_MANAGER_API_KEY: <YOUR JACKETT API KEY>
-  INDEXER_MANAGER_INDEXERS: '["EXAMPLE1_CHANGETHIS", "EXAMPLE2_CHANGETHIS"]'
-```
-
-Now visit your Comet URL from your dashboard, enter your debrid provider API key, pick your indexers (*may as well pick 'em all!*), and click `Install`!
-
-### Proxy Streaming and Password
-
-To enable Proxy Streaming, use you can either add the following ENV vars to your ConfigMap, or just use [ElfBot][elfbot], and run (*one line at a time*):
+To enable Proxy Streaming, you'll need to set two environment variables, as follows
 
 Choose your own password, and replace `whatevermypasswordis` below with your own password:
 
-```
-elfbot env comet PROXY_DEBRID_STREAM_PASSWORD=whatevermypasswordis
-```
-
-And to enable proxy streaming:
-
-```
-elfbot env comet PROXY_DEBRID_STREAM=true
+``` title="Quick-paste into Comet's environment variables using ElfBot"
+PROXY_DEBRID_STREAM_PASSWORD=whatevermypasswordis
+PROXY_DEBRID_STREAM=true
 ```
 
-## Debrid Stream Proxying
+### Proxy Streaming
 
 Here's how Debrid Stream Proxying works
 
@@ -140,8 +93,30 @@ Here's how Debrid Stream Proxying works
 
     In Stream Proxy mode, use Comet **exclusively, everywhere**!
 
-### Test your speed
+#### Test your speed
 
 To test your streaming speed to your Comet instance, browse to `https://speed.elfhosted.com` to perform a speedtest to the datacenter whose suffix which matches your Comet URL (*too slow? You can [migrate](/how-to/migrate-datacenters/) to a closer datacenter, based on your speedtest results*)
+
+### Adding custom indexers (optional)
+
+Comet will work perfectly well "out of the box", but users wanting to add their own custom / private indexers can do so using either Prowlarr or Jackett, as described below.
+
+### With Prowlarr
+
+``` title="Quick-paste into Comet's environment variables using ElfBot"
+INDEXER_MANAGER_TYPE=prowlarr
+INDEXER_MANAGER_URL=http://prowlarr:9696
+INDEXER_MANAGER_API_KEY=<YOUR PROWLARR API KEY>
+INDEXER_MANAGER_INDEXERS='["EXAMPLE1_CHANGETHIS", "EXAMPLE2_CHANGETHIS"]'
+```
+
+### With Jackett
+
+``` title="Quick-paste into Comet's environment variables using ElfBot"
+INDEXER_MANAGER_TYPE=jackett
+INDEXER_MANAGER_URL=http://jackett:9117
+INDEXER_MANAGER_API_KEY=<YOUR JACKETT API KEY>
+INDEXER_MANAGER_INDEXERS='["EXAMPLE1_CHANGETHIS", "EXAMPLE2_CHANGETHIS"]'
+```
 
 {% include 'app_footer.md' %}

@@ -24,8 +24,8 @@ You'll find a link on your ElfHosted apps dashboard to MediaFlow Proxy, which pr
 
 Before you can use MediaFlow Proxy, you'll need to set your API password, to protect your proxy (otherwise publically exposed) from abuse. Use [ElfBot][elfbot] to run:
 
-```
-elfbot env mediaflow-proxy API_PASSWORD=whatevermypasswordis
+``` title="Quick-paste into MediaFlow Proxy's environment variables using ElfBot"
+API_PASSWORD=whatevermypasswordis
 ```
 
 ### Test your speed

@@ -63,7 +63,6 @@
 [plex]:                 /app/plex/
 [plex-debrid]:          /app/plex-debrid/
 [plex-meta-manager]:    /app/plex-meta-manager/
-[plex-requests]:        /app/plex-requests/
 [privatebin]:           /app/privatebin/
 [prowlarr]:             /app/prowlarr/
 [pyload]:               /app/pyload/
@@ -100,7 +99,6 @@
 [knightcrawler]:        /app/knightcrawler/
 [uptimekuma]:           /app/uptimekuma/
 [vaultwarden]:          /app/vaultwarden/
-[wallabag]:             /app/wallabag/
 [wizarr]:               /app/wizarr/
 [webdav]:               /app/webdav/
 [youriptv]:             /app/youriptv/

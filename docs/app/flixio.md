@@ -25,9 +25,10 @@ Further, the patched client restores external player functionality, so that medi
 
 Your Flixio instance is exposed to the public internet without SSO, so to prevent unauthorized access, it is protected by a web auth password. The password defaults to `changemeelfie`, but you should change this ASAP, by running the following with [ElfBot][elfbot]:
 
+``` title="Quick-paste into Flixio's environment variables using ElfBot"
+WEB_AUTH_KEY=<your chosen password>
 ```
-elfbot env flixio WEB_AUTH_KEY=<your chosen password>
-```
+
 ### Infuse / VLC support
 
 To use Flixio (*Stremio Web*) with external player support, navigate to `Settings` -> `Player` -> `Advanced`, and alter the setting for `Play in external player`:

@@ -1,11 +1,11 @@
 ---
 title: Elf Hosted PrivateBin 🧝
-slug: Plex-Meta-Manager
-description: Plex Meta Manager super-charges your Plex library with overlays, collections, and more!
-upstream: https://metamanager.wiki
+slug: Kometa
+description: Kometa super-charges your Plex library with overlays, collections, and more!
+upstream: https://kometa.wiki
 links:
 - name: Discord
-  uri: https://metamanager.wiki/en/latest/discord/
+  uri: https://kometa.wiki/en/latest/en/latest/discord/
 sponsorship:
 - name: GitHub Sponsors
   uri: https://github.com/sponsors/meisnate12
@@ -13,7 +13,7 @@ sponsorship:
 
 # {{ page.meta.slug }}
 
-With Plex Meta Manager, you can:
+With Kometa, you can:
 
 * Create hand-crafted collections to showcase your library in unique ways
 * Apply modular overlays to your posters
@@ -32,8 +32,12 @@ Being a command-line tool, {{ page.meta.slug }} doesn't actually have a UI you c
 
 ## Can I set env vars?
 
-Yes, [use ElfBot to set your ENV vars](/app/elfbot/#how-to-set-an-env-var-for-an-app) - here's a [link to the official docs](https://metamanager.wiki/en/latest/pmm/environmental/) describing how to use environment variables.
+Yes, use [ElfBot][elfbot] to set your ENV vars - here's a [link to the official docs](https://metamanager.wiki/en/latest/pmm/environmental/) describing how to use environment variables.
 
-You could, for example, use `elfbot env plexmetamanager PMM_TIMES=10:00,23:00` to configure Plex Meta Manager to run at 10am and 11pm (UTC) daily.
+You could, for example, use set `PMM_TIMES=10:00,23:00` to configure Plex Meta Manager to run at 10am and 11pm (UTC) daily:
+
+``` title="Quick-paste into Kometa's environment variables using ElfBot"
+PMM_TIMES=10:00,23:00
+```
 
 {% include 'app_footer.md' %}

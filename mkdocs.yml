@@ -76,6 +76,7 @@ nav:
       - Jellyfin Accounts: app/jellyfin-accounts.md
       - Jellyseerr: app/jellyseerr.md
       - Jellystat: app/jellystat.md
+      - Kometa: app/kometa.md
       - Lidarr: app/lidarr.md
       - List-Sync: app/list-sync.md
       - Mylar: app/mylar.md
@@ -85,8 +86,6 @@ nav:
       - Overseerr: app/overseerr.md
       - PeerTube: app/peertube.md
       - Petio: app/petio.md
-      - Plex Meta Manager: app/plex-meta-manager.md
-      - Plex Requests: app/plex-requests.md
       - Pulsarr: app/pulsarr.md
       - Radarr: app/radarr.md
       - Readarr: app/readarr.md
@@ -146,7 +145,6 @@ nav:
       - The Lounge: app/thelounge.md
       - Uptime Kuma: app/uptimekuma.md
       - Vaultwarden: app/vaultwarden.md
-      - Wallabag: app/wallabag.md
       - WebDAV Access: app/webdav.md
 
     - Stremio Addons:    
@@ -187,9 +185,10 @@ nav:
 
   - Support:
     - get-help.md
+    - Troubleshoot: how-to/troubleshoot.md
+    - FAQ: faq.md
     - Discord: https://discord.elfhosted.com
     - Earn ElfPoints: how-to/earn-elfpoints.md    
-    - Troubleshoot: how-to/troubleshoot.md    
     - Migrate Datacenters: how-to/migrate-datacenters.md
     - Reviews: how-to/leave-a-review.md  
     - Plex Token: how-to/get-plex-token.md  
@@ -198,7 +197,6 @@ nav:
     - Connect Apps: how-to/connect-apps.md
     - Data Retention: how-to/delete-your-data.md
     - Use ElfTerm: how-to/use-elfterm.md
-    - FAQ: faq.md
     - ElfBuckz: how-to/spend-elfbuckz.md
   - Legal:
     - legal/index.md

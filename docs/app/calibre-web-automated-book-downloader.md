@@ -25,8 +25,8 @@ The contents of `/cwa-book-ingest/` will be deleted after ingestion (*You can, h
 
 If you're an Anna's Archive donator, you can access faster (and more reliable) downloads, by passing your secret key using [ElfBot][elfbot], as follows:
 
-```
-elfbot env cwa-book-downloader AA_DONATOR_KEY=<your secret key>
+``` title="Quick-paste into CWA Downloader's environment variables using ElfBot"
+AA_DONATOR_KEY=<your secret key>
 ```
 
 {% include 'app_footer.md' %}

@@ -30,24 +30,64 @@ ElfHosted provides a public, community version of MediaFusion at https://aiostre
 
 ## How do I use it?
 
-### Set SECRET_KEY
+### Proxying (optional)
+
+We preconfigure AIOStreams with your bundled MediaFlowProxy or StremThru, so usually you'd just set the `credentials` field to match either your StremThru store, or your MediaFlowProxy api_password.
+
+#### StremThru
+
+Use [ElfBot] to set the `STREMTHRU_STORE_AUTH` ENV var for Stremthru, to something like `spiderman:ilovemaryjane`, and then use that same value (`spiderman:ilovemaryjane`) as your proxy credentials in AIOStreams. Leave the rest of the proxy options as pre-configured.
+
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+STREMTHRU_STORE_AUTH=spiderman:ilovemaryjane
+```
+
+#### MediaFlow Proxy
+
+Use [ElfBot] to set the `API_PASSWORD` ENV var for MediaFlow Proxy, to something like `greengoblinwuzhere`, and then use that same value (`greengoblinwuzhere`) as your proxy credentials in AIOStreams. Leave the rest of the proxy options as pre-configured.
+
+``` title="Quick-paste into MediaFlow Proxy's environment variables using ElfBot"
+API_PASSWORD=greengoblinwuzhere
+```
+
+#### Preferring MediaFlowProxy over StremThru
+
+If you have both StremThru **and** MediaFlowProxy, we'll default your AIOStreams to work with StremThru, but you can override these defaults by setting the following ENV vars using [ElfBot][elfbot]:
+
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+FORCE_PROXY_ID=mediaflow
+FORCE_PROXY_URL=http://mediaflow-proxy:8888
+FORCE_PROXY_PUBLIC_URL=https://<your mediaflow proxy hostname>
+```
+
+#### Using an external proxy
+
+If you prefer to use an external (non-ElfHosted) instance of either StremThru or MediaFlowProxy, you'll need to pass ENV vars to AIOStreams to override our preset defaults. There's usually a disparity between the internal and the public URL of the proxy, but assuming an external StremThru with url `https://mystremthru.mickeymouse.com`, you'd set:
+
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+FORCE_PROXY_ID=stremthru
+FORCE_PROXY_URL=https://mystremthru.mickeymouse.com
+FORCE_PROXY_PUBLIC_URL=https://mystremthru.mickeymouse.com
+```
+
+### Set SECRET_KEY (optional)
 
 AIOStreams uses a secret key to encrypt the data you provide, so that you're not exposing base64-encoded API keys in the manifest URLs held by Stremio. This also protects your keys if you share your addon, since a user would need your ElfHosted SSO credentials in order to use the /configure page to examine them.
 
 AIOStreams won't work without a `SECRET_KEY`, but we've set a secret default so that the app will work without configuration. Users who prefer to, can change their `SECRET_KEY` (and re-install the addon), by generating a 64-character hexidecimal string (*`openssl rand -hex 32` for example*), and then applying it to AIOStreams using [ElfBot][elfbot]:
 
-```
-elfbot env aiostreams SECRET_KEY=whateveryousetmakesureits64charshexidecimalonly
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+SECRET_KEY=whateveryousetmakesureits64charshexidecimalonly
 ```
 
-### Set ADDON_PASSWORD
+### Set ADDON_PASSWORD (optional)
 
 AIOStreams supports using regex-based sorting and filtering, to further refine your results. In order for the options (`excludePattern` and `includePattern`) to appear, users need to set an `ADDON_PASSWORD` environment variable.
 
 Unlike `SECRET_KEY`, `ADDON_PASSWORD` can be anything you like - you'll need to enter it on the `/configure` page, and reconfigure the addon, in order to use it. Set the `ADDON_PASSWORD` in AIOStreams using [ElfBot][elfbot]:
 
-```
-elfbot env aiostreams ADDON_PASSWORD=whateveryoulike
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+ADDON_PASSWORD=whateveryoulike
 ```
 
 !!! note "Backwards-compatible to `API_KEY`"
@@ -57,32 +97,8 @@ elfbot env aiostreams ADDON_PASSWORD=whateveryoulike
 
 If you've got an ElfHosted [MediaFusion][mediafusion] instance, you'll have set your own `api_password`. AIOStreams needs that same password for optimal integration into the /configure page, so set it using:
 
-```
-elfbot env aiostreams MEDIAFUSION_API_PASSWORD=sameapipasswordyousetformediafusion
-```
-
-### Proxying
-
-We preconfigure AIOStreams with your bundled MediaFlowProxy or StremThru, so usually you'd just set the `credentials` field to match either your StremThru store, or your MediaFlowProxy api_password.
-
-#### Preferring MediaFlowProxy over StremThru
-
-If you have both StremThru **and** MediaFlowProxy, we'll default your AIOStreams to work with StremThru, but you can override these defaults by setting the following ENV vars using [ElfBot][elfbot]:
-
-```
-elfbot env aiostreams FORCE_PROXY_ID=mediaflow
-elfbot env aiostreams FORCE_PROXY_URL=http://mediaflow-proxy:8888
-elfbot env aiostreams FORCE_PROXY_PUBLIC_URL="https://<your mediaflow proxy hostname>"
-```
-
-#### Using an external proxy
-
-If you prefer to use an external (non-ElfHosted) instance of either StremThru or MediaFlowProxy, you'll need to pass ENV vars to AIOStreams to override our preset defaults. There's usually a disparity between the internal and the public URL of the proxy, but assuming an external StremThru with url `https://mystremthru.mickeymouse.com`, you'd set:
-
-```
-FORCE_PROXY_ID: stremthru
-FORCE_PROXY_URL: https://mystremthru.mickeymouse.com
-FORCE_PROXY_PUBLIC_URL: "https://mystremthru.mickeymouse.com"
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+MEDIAFUSION_API_PASSWORD=sameapipasswordyousetformediafusion
 ```
 
 {% include 'app_footer.md' %}
