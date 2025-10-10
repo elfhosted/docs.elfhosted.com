@@ -29,42 +29,12 @@ SeerrBridge is a browser automation tool that integrates Jellyseer/Overseerr wit
 
 You'll need some unique environment variables before you launch SeerrBridge, as indicated below.
 
-### SeerrBridge
-
-While usually environment variables can be managed via [ElfBot][elfbot], since `RD_ACCESS_TOKEN` contains quotes and spaces, it's simpler and safer to bypass ElfBot, and create a ConfigMap directly in Kubernetes Dashboard.
-
-From [Kubernetes Dashboard][kubernetes-dashboard], click the `+` icon to create a new resource:
-
-![](/images/gluetun-configmap-1.png)
-
-Copy the example YAML below, edit it to include the values you need for your config (*in the following sections*), and paste them in:
-
-```yaml
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: elfbot-seerrbridge
-data:
-  RD_ACCESS_TOKEN: 'YOUR_RD_TOKEN_FROM_DMM'
-  RD_CLIENT_ID: YOUR_CLIENT_ID
-  RD_CLIENT_SECRET: YOUR_CLIENT_SECRET
-  RD_REFRESH_TOKEN: YOUR_REFRESH_TOKEN
-  OVERSEERR_API_KEY: YOUR_OVERSEERR_TOKEN
-```
-
-!!! tip "Syntax matters"
-    Ensure you enclose the **entire** `RD_ACCESS_TOKEN` value in single quotes, as illustrated above.
-
-Save your changes to create the ConfigMap, and use [ElfTerm][elfterm] to run `elfbot restart seerrbridge` to restart.
-
-If you need to make subsequent changes to the ConfigMap, find it under ConfigMaps and edit it directly. (*or use ElfBot for minor changes*)
-
 ### Overseerr
 
 Navigate to your Overrseerr, to `Settings` -> `General` and retrieve your API key
 
 !!! tip "Using an external Overseerr"
-    The solution is designed to work seamlessly with your ElfHosted [Overseerr][overseerr] / [Jellyseerr][jellyseerr] instance, but if you want to interact with an existing, external 'seerr, you'll also want to set the `OVERSEERR_BASE` value in the `elfbot-seerrbridge` configmap, to point to your external 'seerr URL.
+    The solution is designed to work seamlessly with your ElfHosted [Overseerr][overseerr] / [Jellyseerr][jellyseerr] instance, but if you want to interact with an existing, external 'seerr, you'll also want to set the `OVERSEERR_BASE` using [ElfBot][elfbot], to point to your external 'seerr URL.
 
 ### DebridMediaManager
 
@@ -82,11 +52,14 @@ Firefox:
 
 Use the values you find to prepare the following:
 
-```
-RD_ACCESS_TOKEN: '{"value":"your_token","expiry":123}'
-RD_CLIENT_ID: YOUR_CLIENT_ID
-RD_CLIENT_SECRET: YOUR_CLIENT_SECRET
-RD_REFRESH_TOKEN: YOUR_REFRESH_TOKEN
+Now insert the values identified above into SeerrBridge's environment variables using [ElfBot][elfbot]:
+
+``` title="Quick-paste into SeerrBridge's environment variables using ElfBot"
+RD_ACCESS_TOKEN={"value":"your_token","expiry":123}
+RD_CLIENT_ID=YOUR_CLIENT_ID
+RD_CLIENT_SECRET=YOUR_CLIENT_SECRET
+RD_REFRESH_TOKEN=YOUR_REFRESH_TOKEN
+OVERSEERR_API_KEY=YOUR_OVERSEERR_TOKEN
 ```
 
 #### Filtering (optional)
@@ -95,13 +68,10 @@ The [upstream docs](https://github.com/Woahai321/SeerrBridge?tab=readme-ov-file#
 
 As of v0.4.5, a global maximum for movie and episode size can also be set.
 
-Optionally, edit your ConfigMap to apply the following values:
-
+``` title="Quick-paste into SeerrBridge's environment variables using ElfBot"
+MAX_MOVIE_SIZE: "60"
+MAX_EPISODE_SIZE: "5"
+TORRENT_FILTER_REGEX=^(?!.*【.*?】)(?!.*[\u0400-\u04FF])(?!.*\[esp\]).*
 ```
-  MAX_MOVIE_SIZE: "60"
-  MAX_EPISODE_SIZE: "5"
-  TORRENT_FILTER_REGEX=^(?!.*【.*?】)(?!.*[\u0400-\u04FF])(?!.*\[esp\]).*
-```
-
 
 {% include 'app_footer.md' %}
