@@ -24,5 +24,8 @@ https://elfhosted.com/apps            https://store.elfhosted.com/product-catego
 # Landing page
 https://elfhosted.com                 https://store.elfhosted.com 301!
 
-# Bottom level - anything not already matched gets redirected to docs
+# Images
+https://elfhosted.com/images/* https://docs.elfhosted.com/images/:splat 301!
+
+# Bottom level - anything not already matched gets redirected to store
 https://elfhosted.com/* https://store.elfhosted.com/:splat 301!
