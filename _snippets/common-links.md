@@ -1,5 +1,6 @@
 [actual]:               /app/actual/
 [aiostreams]:           /app/aiostreams/
+[aiometadata]:          /app/aiometadata/
 [airdcpp]:              /app/airdcpp/
 [audiobookrequest]:     /app/audiobookrequest/
 [audiobookshelf]:       /app/audiobookshelf/
