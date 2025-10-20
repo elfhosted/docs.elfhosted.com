@@ -17,7 +17,7 @@ AIOMetadata is a next-generation, power-user-focused metadata addon for Stremio.
 
 ElfHosted provides a public, community version of AIOMetaData at https://aiometadata.elfhosted.com, and per-user, private, instances with pre-warming support.
 
-!!! tip "AIOStreams gets revenue sharing! :heart:"
+!!! tip "AIOMetadata gets revenue sharing! :heart:"
     AIOMetadata is an "Elf-illiated" Premium [Stremio Addon][stremio-addons] - the developer maintains an active support channel ([#elf-aiometadata](https://discord.com/channels/396055506072109067/1429233135874216068)) in our [Discord][discord] community, the app itself is tuned to work perfectly with ElfHosted "out-of-the-box", and 33% of your subscriptions are contributed to the developer!
 
 {% include 'app.md' %}
