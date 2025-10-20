@@ -1,5 +1,5 @@
 ---
-title: Private hosted AIOMetadat instance
+title: Private hosted AIOMetadata instance
 slug: AIOMetadata
 description: A next-generation, power-user-focused metadata addon for Stremio. It aggregates and enriches movie, series, and anime metadata from multiple sources (TMDB, TVDB, MyAnimeList, AniList, IMDb, TVmaze, Fanart.tv, MDBList, and more), giving you full control over catalog sources, artwork, and search
 upstream: https://aiometadata.elfhosted.com
