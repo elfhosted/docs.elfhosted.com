@@ -34,6 +34,18 @@ ElfHosted provides a public, community version of MediaFusion at https://aiostre
 
 We preconfigure AIOStreams with your bundled MediaFlowProxy or StremThru, so usually you'd just set the `credentials` field to match either your StremThru store, or your MediaFlowProxy api_password.
 
+#### Built-in
+
+AIOStreams now provides built-in proxying, if you don't want / need to use StremThru or MediaFlow Proxy.
+
+To configure built-in proxying, create one or more proxy users, as follows:
+
+``` title="Quick-paste into StremThru's environment variables using ElfBot"
+AIOSTREAMS_AUTH=user1:user1password,user2:user2password
+```
+
+You can also access a dashboard showing proxy activity at `<your AIOStreams URL>/api/v1/proxy/stats?auth=username:password`.
+
 #### StremThru
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sYOsZ4AUN-Y?si=TzDsDisFvPPergQ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
