@@ -149,6 +149,7 @@ nav:
 
     - Stremio Addons:    
       - stremio-addons/index.md
+      - AIOMetadata: app/aiometadata.md
       - AIOStreams: app/aiostreams.md
       - Comet: app/comet.md
       - MediaFusion: app/mediafusion.md  
