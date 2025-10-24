@@ -26,6 +26,7 @@ https://elfhosted.com                 https://store.elfhosted.com 301!
 
 # Images
 https://elfhosted.com/images/* https://docs.elfhosted.com/images/:splat 301!
+https://elfhosted.com/assets/* https://docs.elfhosted.com/assets/:splat 301!
 
 # Bottom level - anything not already matched gets redirected to store
 https://elfhosted.com/* https://store.elfhosted.com/:splat 301!

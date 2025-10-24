@@ -71,9 +71,9 @@ It is possible that excessive use of `yt-dlp` with this cookie may flag your acc
 
 Methods may vary per-browser, but here is a solution which works in Firefox.
 
-1. Install the [cookies.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) extention into Firefox
+1. Install the [cookies.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) extension into Firefox, or the [Get cookies.txt LOCALLY](https://chromewebstore.google.com/detail/get-cookiestxt-locally/cclelndahbckbenkjhflpdbgdldlbecc) addon in Chrome
 2. Open a **Private Browser Window**, and navigate to https://youtube.com. Log in with your throwaway account.
-3. Once logged into YouTube, launch the cookies.txt extension, and save all cookies from your current window to a `cookies.txt` file
+3. Once logged into YouTube, launch the extension, and save all cookies from your current window to a `cookies.txt` file
 4. Examine the cookies.txt file, ensure it contains only Google-related cookies
 5. Upload the `cookies.txt` file into YouTarr.
 
