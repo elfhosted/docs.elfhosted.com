@@ -7,6 +7,10 @@ description: The following page guides the user through the process of establish
 
 This guide describes how to use Jellyfin, Gelato, and AIOStreams to create a simple "Infinite Streaming" stack, on ElfHosted.
 
+Here's a video guide:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_5Guc5YOoM?si=5kA-gvViZbt5DvUC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 An enhanced, "ScribeHow" version of this page can be found [here](https://scribehow.com/viewer/Install_Jellyfin_and_Gelato_Plugin_on_ElfHosted__vXHqhlnkQCSG3l40zpAV1g).
 
 [Get your $1, 7-day free trial!](https://store.elfhosted.com/product/hobbit/){ .md-button .md-button--primary }
