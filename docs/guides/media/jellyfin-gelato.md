@@ -13,7 +13,7 @@ Here's a video guide:
 
 An enhanced, "ScribeHow" version of this page can be found [here](https://scribehow.com/viewer/Install_Jellyfin_and_Gelato_Plugin_on_ElfHosted__vXHqhlnkQCSG3l40zpAV1g).
 
-[Get your $1, 7-day free trial!](https://store.elfhosted.com/product/hobbit/){ .md-button .md-button--primary }
+[Get your $1, 7-day free trial!](https://store.elfhosted.com/product/jellygoblin/){ .md-button .md-button--primary }
 
 ## Requirements
 
