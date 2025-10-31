@@ -29,10 +29,10 @@ ElfHosted provides a public, community version of AIOMetaData at https://aiometa
 
 AIOMetadata, by default, will "pre-warm" its catalogs on TMDB for movies, TVMD for series and MAL for anime, in english. However, you may prefer alternate catalog providers, or want to pre-warm your own provider-specific lists, like MAL.
 
-To tailor pre-warming to your own setup, generate a UUID by doing a complete setup, and then pass that UUID to AIOMetadata as an environment variable, using [ElfBot][elfbot]:
+To tailor pre-warming to your own setup, generate a UUID by doing a complete setup, and then pass that UUID to AIOMetadata as an environment variable, using [ElfBot][elfbot]. You can repeat this warm-up for up to 3 UUIDs, comma-separated.
 
 ``` title="Quick-paste into AIOMetadata's environment variables using ElfBot"
-CACHE_WARMUP_UUID=<your uuid>
+CACHE_WARMUP_UUIDS=<your uuid>,<next uuid>,<third uuid>
 ```
 
 ### Dashboard
