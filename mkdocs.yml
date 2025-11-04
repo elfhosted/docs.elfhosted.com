@@ -171,6 +171,7 @@ nav:
         - Riven:
           - RealDebrid: guides/media/emby-realdebrid-riven.md          
       - JellyFin:
+        - Gelato: guides/media/jellyfin-gelato.md      
         - Radarr & Sonarr:
           - RealDebrid: guides/media/jellyfin-realdebrid-aars.md
       - Plex:
