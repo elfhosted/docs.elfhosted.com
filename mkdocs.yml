@@ -105,7 +105,7 @@ nav:
       - Decypharr: app/decypharr.md
       - Flaresolverr: app/flaresolverr.md
       - Jackett: app/jackett.md  
-      - NZBGet: app/nzbget.md
+      - NzbDAV: app/nzbdav.md
       - NZBHydra: app/nzbhydra.md
       - Openbooks: app/openbooks.md
       - Plex-Debrid: app/plex-debrid.md
