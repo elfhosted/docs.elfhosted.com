@@ -76,7 +76,7 @@ Automatic queue management - tune these to your preferences, depending on whethe
 
 ### Shared cache
 
-Every NZB file ingested by an ElfHosted NzbDAV instance also anonymously submits that NZB to an internal-only TorzNab-compatible cache, "ElfZyclops", which is then usable by ElfHosted Stremio/Aarr users, reducing API impact on external indexers, for ElfHosted users' exclusive use.
+Every NZB file ingested by an ElfHosted NzbDAV instance also anonymously submits that NZB to an internal-only TorzNab-compatible cache, "ElfZyclops", which is then usable exclusively by ElfHosted Stremio/Aarr users, reducing API impact on external indexers and improving search speed.
 
 Here's how to use ElfZyclops
 
