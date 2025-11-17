@@ -96,5 +96,13 @@ If you'd prefer not to contribute your NZBs to the shared cache, you can opt **o
 SHARE_NZB_WITH_CACHE=false
 ```
 
+### External access (exposing)
+
+To make NzbDAV work with 3rd-party apps, you'll need to "expose" its API, so that it can be accessed without ElfHosted SSO.
+
+1. Refresh your SABNZBD API token in NzbDAV
+2. Grab [this product](https://store.elfhosted.com/product/nzbdav-exposed/) from the store, to bypass SSO for the API endpoints
+
+Note that exposing NzbDAV doesn't make the content or the admin UI publicly available - it's simply about exposing the SABNZBD API endpoints so that they're accessible from external tools.
 
 {% include 'app_footer.md' %}
