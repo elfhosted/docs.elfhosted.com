@@ -103,6 +103,7 @@ nav:
       - Cleanuparr: app/cleanuparr.md
       - Debridav: app/debridav.md
       - Decypharr: app/decypharr.md
+      - Easynews-as-indexer: app/easynews-as-indexer.md
       - Flaresolverr: app/flaresolverr.md
       - Jackett: app/jackett.md  
       - NzbDAV: app/nzbdav.md
