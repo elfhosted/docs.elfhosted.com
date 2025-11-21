@@ -103,9 +103,10 @@ nav:
       - Cleanuparr: app/cleanuparr.md
       - Debridav: app/debridav.md
       - Decypharr: app/decypharr.md
+      - Easynews-as-indexer: app/easynews-as-indexer.md
       - Flaresolverr: app/flaresolverr.md
       - Jackett: app/jackett.md  
-      - NZBGet: app/nzbget.md
+      - NzbDAV: app/nzbdav.md
       - NZBHydra: app/nzbhydra.md
       - Openbooks: app/openbooks.md
       - Plex-Debrid: app/plex-debrid.md

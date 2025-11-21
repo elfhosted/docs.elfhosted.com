@@ -55,6 +55,7 @@
 [nextpvr]:              /app/nextpvr/
 [notifiarr]:            /app/notifiarr/
 [nzbget]:               /app/nzbget/
+[nzbdav]:               /app/nzbdav/
 [nuviostreams]:         /app/nuviostreams/
 [ombi]:                 /app/ombi/
 [openbooks]:            /app/openbooks/
