@@ -21,8 +21,8 @@ Openbooks allows you to download ebooks from irc.irchighway.net quickly and easi
 
 The app saves books to `/tmp` by default, but this can by adjusted to use a storage mount by passing the `DATA_DIR` env var using [ElfBot][elfbot], for example:
 
-``` title="Quick-paste into Plex's environment variables using ElfBot"
-DATA_DIR=/storage/storagebox-a/media/ebooks
+``` title="Quick-paste into OpenBooks' environment variables using ElfBot"
+DATA_DIR=/storage/rclone/whatever-the-path-is
 ```
 
 
