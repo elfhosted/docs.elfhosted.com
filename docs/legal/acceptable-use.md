@@ -1,8 +1,14 @@
 # Acceptable Use Policy
 
-## Offensive Content
+**Effective Date:** 19 Dec 2025
 
-You may not publish, transmit or store via ElfHosted’s Service any content that ElfHosted reasonably believes:
+This Acceptable Use Policy (“AUP”) forms part of the [Terms of Service](/legal/terms-of-service/), [No-Piracy Policy](/legal/no-piracy-policy/), and [No-Reselling Policy](/legal/no-reselling-policy/). ElfHosted provides consumer-grade application hosting only—we do not supply media, and we do not permit commercial redistribution of the services without written authorization. By using ElfHosted, you agree to abide by the rules below and any other guidance communicated by our team.
+
+> Reminder: ElfHosted is for personal, household workflows. Running commercial workloads, reselling seats, or operating a content service for others is prohibited unless we provide written permission.
+
+## Offensive & illegal content
+
+You may not publish, transmit, or store via ElfHosted’s services any content that ElfHosted reasonably believes:
 
 * constitutes child pornography;
 * is pornographic or obscene material;
@@ -14,7 +20,7 @@ You may not publish, transmit or store via ElfHosted’s Service any content tha
 * is intended to assist others in defeating technical copyright protections;
 * clearly infringes on another person’s trade or service mark, patent, or other property right;
 * promotes illegal drugs, violates export control laws, relates to illegal gambling, or illegal arms trafficking;
-* is otherwise illegal or solicits conduct that is illegal under laws applicable to you or to ElfHosted; or
+* is otherwise illegal or solicits conduct that is illegal under laws applicable to you, ElfHosted, or the jurisdictions where our infrastructure resides; or
 * is otherwise malicious, fraudulent, or may result in retaliation against ElfHosted by offended viewers.
 
 ## Vexation & Harassment
@@ -23,45 +29,36 @@ ElfHosted does not tolerate any harassment, malice or abuse towards it’s emplo
 
 The Customer agrees to conduct themselves in a professional manner regardless of the method of communication with ElfHosted. Should the Customer be found in violation of this clause ElfHosted reserves the right to suspend or terminate services with or without prior notice and without liability.
 
-## Network Abuse
+## Network & security abuse
 
-ElfHosted does not allow, condone or authorize any forms of Network Abuse including, but not limited to, Denial of Service attacks, Phishing attempts, port scans, SYN Floods etc.
-
-ElfHosted reserves full right to determine what constitutes Network Abuse and take the appropriate action against the Customer with or without prior notification and without liability.
+ElfHosted does not allow, condone, or authorize any form of network abuse. Examples include denial-of-service attacks, credential stuffing, phishing, scanning or crawling other users’ services, running open proxies or VPN resale nodes, botnet control, crypto-mining, spamming, or distributing malware.
 
 You may not engage in illegal, abusive, or irresponsible behavior, including but not limited to:
 
-* Unauthorized access to or use of data, systems or networks, including any attempt to probe, scan or test the vulnerability of a system or network or to breach security or authentication measures (*including those belonging to ElfHosted and its customers*) without express authorization of the owner of the system or network;
-* Monitoring data or traffic on any network or system without the authorization of the owner of the system or network;
-* Use of an Internet account or computer without the owner’s authorization, including, but not limited to Internet scanning (*tricking other people into releasing their passwords*), password robbery, security hole scanning, and port scanning;
+* Unauthorized access to or use of data, systems, or networks, including any attempt to probe, scan, or test the vulnerability of a system or network or to breach security or authentication measures (including those belonging to ElfHosted and its customers) without express authorization of the owner of the system or network.
+* Monitoring data or traffic on any network or system without the authorization of the owner of the system or network.
+* Use of an Internet account or computer without the owner’s authorization, including, but not limited to internet scanning, password harvesting, security-hole scanning, or port scanning.
 * Any conduct that is likely to result in retaliation against the ElfHosted network.
-* Use of ElfHosted’s network in a way that unreasonably interferes with ElfHosted’s other customers use of the network.
+* Use of ElfHosted’s network in a way that unreasonably interferes with other customers’ use of the network, including excessive automation, bulk unsolicited messaging, or bandwidth hoarding beyond your plan’s intended scope.
+* Hosting or distributing malicious code, command-and-control infrastructure, or software designed to defeat copyright protection or security controls.
 
 ## Fair Use Policy
 
-### Shared servers
+### Shared infrastructure
 
-In the event the Customer uses excessive resources (CPU, RAM, disk or network) from unsupported activities, ElfHosted reserves the right to terminate your service in order to maintain a consistent level of performance for all of our customers.
-
-In the event that the Customer's app uses excessive RAM from any service (*supported or unsupported*), ElfHosted reserves the right to restart services without notice to the customer to reclaim resources for the public pool. If unsupported scripts or user actions are found to be constantly utilizing significant amounts of RAM and/or are impacting other users of the Service, ElfHosted may issue a warning to the Customer indicating that their usage of the Service is affecting other users. If the Customer ignores these notices or fails to rectify the issue, ElfHosted reserves the right to terminate the account.
-
-In the event that the Customer uses excessive amount of bandwidth for the month (25TB/mo); ElfHosted reserves the right to subject the Customers bandwidth to prioritization or bandwidth limitations. 
-
-In the event that the Customer is discovered to be using an unfairly large portion of the GPU for transcoding purposes, ElfHosted may issue a warning to the Customer indicating that they are unfairly using a limited resource. Similarly, the transcoding of 4K content is strictly prohibited under any circumstance. Depending on the nature of the infraction, customers may be suspended and/or terminated.
+ElfHosted’s shared clusters depend on fair behavior. If a customer uses excessive resources (CPU, RAM, disk, network, or GPU) in a way that degrades other users’ experience, ElfHosted may throttle, restart, isolate, or migrate the workload without notice. Unsupported scripts or user actions that continuously consume disproportionate resources may trigger warnings; failure to remediate can lead to service suspension or termination. 4K transcoding on shared GPUs is prohibited unless explicitly stated in your plan.
 
 ### Security
 
-You must take reasonable security precautions. You must protect the confidentiality of your password, and you should change your password periodically.
+You must take reasonable security precautions. Keep credentials secret, rotate them periodically, and enable multi-factor authentication wherever offered. You are responsible for actions taken under your account, even if performed by someone else due to weak passwords or credential reuse.
 
-### Abuse Tickets
+### Abuse tickets & disclosure
 
-ElfHosted’s standard policy is to contact The Customer during which a violation of the AUP or TOS has occurred, however, ElfHosted does reserve the right to suspend or terminate an account with or without notice at it’s own discretion. The Customer agrees to maintain up to date primary contact email information with ElfHosted. The violation shall be listed in the Subject of the email sent from our administration and abuse department (admin@elfhosted.com). The Customer shall be given all appropriate details of the Violation as well as a time frame to correct the issue before action shall be taken. Once the email has been sent to The Customer, ElfHosted will consider that The Customer has been notified. ElfHosted reserves the right to use discretion on the amount of time given for a customer to correct the issue before action is taken.
+ElfHosted’s standard policy is to contact the customer when a violation of the AUP or Terms of Service has occurred; however, we reserve the right to suspend or terminate an account with or without notice at our discretion. The customer agrees to maintain up-to-date contact information. Notices will be sent from <mailto:legal@elfhosted.com> (or our helpdesk) and will specify the violation and the remediation window—typically acknowledgement within 24 hours and remediation windows ranging from immediate action to 48 hours depending on severity. Failure to respond within the stated window may result in automatic suspension. ElfHosted may share relevant logs or account details with upstream providers or law enforcement when required by law or to resolve abusive activity. For details on how we process abuse complaints, see the [Abuse Policy](/legal/abuse/), and for copyright takedowns see the [Notice & Takedown policy](/legal/takedownnotice/).
 
 ### Resource Abuse
 
-We shall investigate the resource abuse and provide the Customer with a best effort analysis of the problem causing the resource abuse. At which time the Customer will be given a time frame to make the corrections to their code, scripts, or software services running. If the issue is not corrected within the time frame given, ElfHosted will then take further steps to ensure the stability of the network and servers and may take actions including but not limited to disabling plugins, themes, accounts, scripts, services and in reserves the right to issue a full service suspension depending on the severity of the issue based upon ElfHosted’s judgment of the scenario.
-
-None of the above examples are meant to be specific guidelines with regards to how each and every case may be handled. ElfHosted reserves full rights to use its judgment and discretion in how each individual case is handled.
+We will investigate reports of resource abuse and provide a best-effort analysis of the underlying cause. Customers will have a defined remediation window to adjust code, scripts, or workloads. If the issue persists, ElfHosted may disable plugins, themes, services, or entire accounts; migrate workloads to isolated hardware; or permanently terminate service, depending on severity. Examples are illustrative, not exhaustive—ElfHosted reserves full discretion in interpreting and enforcing this AUP.
 
 ## Disclaimer
 

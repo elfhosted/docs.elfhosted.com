@@ -1,55 +1,41 @@
 ---
-title: 🧝 Hosted AudioBookBay-Automated 🎧
-slug: AudioBookBayA
-upstream: https://www.audiobookshelf.org
-sponsorship: 
-- name: GitHub Sponsors
-  uri: https://github.com/sponsors/advplyr
+title: 🧝 Hosted AudiobookBay Automated 🎧
+slug: AudiobookBay-Automated
+upstream: <https://github.com/JamesRy96/audiobookbay-automated>
+description: AudiobookBay Automated searches AudioBook Bay and pushes magnet links into your torrent client so apps like Audiobookshelf can ingest the finished downloads automatically.
 links:
-- name: Official Subreddit 
-  uri: https://www.reddit.com/r/audiobookshelf
-- name: Discord server
-  uri: https://discord.com/invite/pJsjuNCKRq
 - name: GitHub repo
-  uri: https://github.com/advplyr/audiobookshelf
-- name: App (Google Play)
-  uri: https://play.google.com/store/apps/details?id=com.audiobookshelf.app
-- name: iOS app (Testflight)
-  uri: https://testflight.apple.com/join/wiic7QIW
-title: Audiobookshelf
-description: Audiobookshelf is an audiobook and podcast streaming server, with native Android / iOS apps
+  uri: <https://github.com/JamesRy96/audiobookbay-automated>
+- name: Container image
+  uri: <https://github.com/JamesRy96/audiobookbay-automated/pkgs/container/audiobookbay-automated>
+- name: Screenshots
+  uri: <https://github.com/JamesRy96/audiobookbay-automated#screenshots>
 ---
 
+<!-- markdownlint-disable-next-line MD025 -->
 # {{ page.meta.slug }}
 
-Audiobookshelf is an audiobook and podcast streaming server, with native [Android](https://play.google.com/store/apps/details?id=com.audiobookshelf.app) / iOS ([testflight](https://testflight.apple.com/join/wiic7QIW)) apps.
+AudiobookBay Automated (ABB Automated) is a lightweight web UI that searches [AudioBook Bay](https://audiobookbay.lu/) and forwards the results to Decyhparr. Decypharr creates a symlink and, ABB Automated moves the downloads to a destination folder, and apps such as [Audiobookshelf][audiobookshelf] can pick up the organized files automatically.
 
 {% include 'app.md' %}
 
 Features include:
 
-* Fully open-source, including the android & iOS app (in beta)
-* Stream all audio formats on the fly
-* Search and add podcasts to download episodes w/ auto-download
-* Multi-user support w/ custom permissions
-* Keeps progress per user and syncs across devices
-* Auto-detects library updates, no need to re-scan
-* Upload books and podcasts w/ bulk upload drag and drop folders
-* Backup your metadata + automated daily backups
-* Progressive Web App (PWA)
-* Chromecast support on the web app and android app
-* Fetch metadata and cover art from several sources
-* Chapter editor and chapter lookup (using Audnexus API)
-* Merge your audio files into a single m4b
-* Embed metadata and cover image into your audio files (using Tone)
-* Basic ebook support and e-reader (experimental)
-  
+- 🔎 Fast keyword search across the public AudioBook Bay index.
+- 🖼️ Inline book covers, titles, and "More details" links for quick vetting.
+- ⚡ One-click "Download to server" that generates a magnet link from the ABB infohash and posts it to your torrent client's WebUI.
+- 📁 Automatic category + save-path assignment so torrents land in the right library folder for Audiobookshelf, Plex, or Jellyfin.
+- 📊 Optional status view that shows everything in the chosen torrent category, so you can see what is still downloading.
+- 🔗 Optional navigation link (e.g., "Open Audiobookshelf") injected into the UI for rapid hopping between tools. 
+
 {% include 'app_access.md' %}
 
 ## How do I use it?
 
-Upon launch, you'll be prompted to create a username/password. Once this is completed, you'll be able to access the app, and configure your users, libraries, etc.
+Use the search box to find a title on AudioBook Bay. Click **More details** to open the ABB listing, or **Download to server** to push the magnet directly into Decypharr.
 
-You may need to mount external storage to store your Audiobooks, using [rclone][rclone], if you're not storing your Audiobooks on an existing cloud storage provider, like [Real-Debrid][real-debrid].
+### Final Destination
+
+By default, AudiobookBay Automated will move completed symlinks to `/storage/symlinks/audiobooks`, but if you'd prefer the files be **actually copied** (dereferenced) to [rclone-mounted][rclone] storage, then set the `TARGET_DIR` ENV var using [ElfBot]
 
 {% include 'app_footer.md' %}

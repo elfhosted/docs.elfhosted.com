@@ -1,5 +1,7 @@
 # Refund Policy
 
+**Effective Date:** 19 Dec 2025
+
 ## Trial Periods vs refunds
 
 ElfHosted provide generous 7-day trial periods of our apps and lower-tier subscription bundles, for a token $1 to validate payment gateways. The intention of these trial periods is to afford users ample time to discover the platform, and to determine whether it's a "fit" for them. Trial signup fees are non-refundable.
@@ -7,6 +9,8 @@ ElfHosted provide generous 7-day trial periods of our apps and lower-tier subscr
 With this goal in mind, ElfHosted will not issue refunds for "unsuitability" of the platform, if users "change their mind" during their subscription term. If the platform is unsuitable, users should have discovered this within their 7-day trial period.
 
 Packages without trials periods (*Rangers, Halflings, Nazguls*) are not eligible for discretionary refunds. Users wanting to "test the waters" should start on a trial package and upgrade to a larger package when they're satisfied and willing to commit. Refunds will not be offered for non-trial packages.
+
+All payments (including those made via cryptocurrency or through third-party processors) are final once services are provisioned. Initiating a chargeback, payment dispute, or cryptocurrency clawback immediately terminates all active services and forfeits any right to future access, remaining time, or data stored with ElfHosted.
 
 ## Promotions
 
@@ -24,6 +28,10 @@ While we reserve the right to make exceptions to this rule based on individual c
 
 While ElfHosted will, in good faith, attempt to resolve issues, events outside of ElfHosted's direct control, such as policy or technical changes to 3rd parties (*Plex, RealDebrid, etc*) which render the service unusable, will **not** constitute grounds for a refund.
 
+Any request for a discretionary refund must be accompanied by a support ticket demonstrating that the customer cooperated with troubleshooting efforts and granted ElfHosted reasonable time to resolve the issue. Requests submitted after cancellation, without a ticket, or from users who refused to follow support instructions will be denied. Where ElfHosted elects to issue a refund, it will be net of non-refundable payment-processor fees, currency conversion costs, and usage already consumed.
+
+ElfHosted may modify, replace, or retire individual applications, bundles, or integrations at any time. If a third-party vendor, API, or upstream provider (including but not limited to Abavia, Plex, RealDebrid, AllDebrid, cloud storage hosts, or datacenter partners) alters their service in a way that affects ElfHosted offerings, such change does **not** create refund eligibility. Our obligation is limited to providing a commercially reasonable alternative where feasible; if no alternative exists, standard cancellation terms apply without reimbursement.
+
 ## No Refunds
 
 To be clear, the following are example cases under which you will **not** receive a refund:
@@ -39,3 +47,6 @@ To be clear, the following are example cases under which you will **not** receiv
 * Your subscription was automatically renewed due to not cancelling the subscription before the renewal date
 * You are unwilling or unable to cooperate with the ElfHosted support team in providing necessary information for troubleshooting in a timely manner
 * You only have a smartphone, but the apps you're using require a desktop / laptop browser
+* You initiated a payment dispute, chargeback, or cryptocurrency clawback through your financial institution
+* An upstream service, API, or third-party vendor changed terms or functionality, and ElfHosted can no longer offer the specific feature you expected
+* You did not open, or refused to participate in, a support ticket prior to requesting a refund

@@ -1,11 +1,28 @@
 # No-Piracy Policy
 
-The following is inspired by the Jellyfin Forums' [Piracy Policy](https://forum.jellyfin.org/t-jellyfin-forum-rules), and applies to all ElfHosted community spaces (*Discord, Reddit, etc*)
+**Effective Date:** 19 Dec 2025
 
-ElfHosted aims to be an independent provider of infrastructure. We never store user media content, and any storage connected to a user's account is understood to be at their own initiative, at their own risk, and in compliance with local and international law.
+This policy applies to all ElfHosted services and community spaces (Discord, Reddit, social channels, support tickets, etc.). It takes cues from the Jellyfin forums' [Piracy Policy](https://forum.jellyfin.org/t-jellyfin-forum-rules/) and exists to keep the community focused on legal self-hosting.
 
-1. We do not care where your media comes from. This is our "golden rule". Don't be explicit about it; it's never relevant to the issue at hand, with the caveats below. For example, "Yea I got this movie form GreatTorrentSite.net" is disallowed.
-2. Directly referencing or linking to piracy websites (*including torrent sites, forums, etc.*) is, of course, prohibited. Do not do it; this is very much on the far side of the line.
-3. Selling, trading, or otherwise providing access to your ElfHosted apps instance(s), in any form is prohibited. Instances of ElfHosted services that are available to the public, either openly or by invitation, containing media that the owner of the instance does not have legal permission to "distribute" or "perform" (as per local and international laws), are piracy and will not be supported here.
-4. Often, the format of the media can contain info that points towards a pirated source. This is fine as-is, but do not elaborate on it. For example, saying it's "a WEB video" is OK, but not any more than that. Saying it's "a WEB video ripped from Netflix" is not OK.
-5. Likewise, references, logs or screenshots of media with an identified, pirated source are not, and should be scrubbed from any community communications.
+## What ElfHosted does (and doesn’t) provide
+
+- ElfHosted supplies hosting automation and application infrastructure only. We do **not** provide, curate, seed, mirror, or otherwise distribute media content.
+- Any storage you connect, files you ingest, or libraries you build are entirely under your control and at your own risk. You alone are responsible for ensuring your content complies with every applicable copyright and licensing law.
+
+## Conduct rules
+
+1. **No sourcing talk.** Do not describe, brag about, or otherwise identify where you obtained media. Phrases such as “I grabbed this from SomeTorrentSite” are disallowed. If the source is relevant for troubleshooting, use neutral terminology (e.g., “WEB rip”) without naming services or scene groups.
+2. **No piracy links or instructions.** Sharing URLs, magnet links, screenshots, or “how-to” guidance for piracy sites, trackers, forums, Discords, or automation scripts is strictly prohibited.
+3. **No redistribution.** Selling, trading, leasing, or giving public access to your ElfHosted apps or libraries—especially when you do not hold the rights to distribute the media—counts as piracy and violates our [No Reselling Policy](/legal/no-reselling-policy/). Community support will be refused and services may be terminated.
+4. **Scrub identifiable evidence.** Logs, screenshots, or filenames that clearly reference pirated sources (scene tags, tracker URLs, OTT brand watermarks, etc.) must be removed before posting. If you cannot share redacted evidence, do not share it at all.
+5. **Respect takedowns.** If ElfHosted or an upstream provider receives a credible infringement notice about your account, you must remediate immediately. Failure to comply can result in suspension or deletion of services without refund.
+
+## Enforcement
+
+Violations of this policy also breach the [Terms of Service](/legal/terms-of-service/), [Acceptable Use Policy](/legal/acceptable-use/), and [No Reselling Policy](/legal/no-reselling-policy/). Depending on severity, we may:
+
+- Warn and remove offending posts or tickets.
+- Temporarily or permanently suspend your community access or hosted services.
+- Report egregious behavior or repeat offenders to upstream providers, payment processors, or relevant authorities.
+
+ElfHosted reserves the right to refuse support or terminate accounts that engage in piracy or help others pirate. Keep discussions focused on legal, self-hosted workflows and we’ll all have a safer community. For guidance on submitting DSA/DMCA notices, visit our [Notice & Takedown policy](/legal/takedownnotice/).

@@ -51,6 +51,7 @@ nav:
   - Apps:
     - apps/index.md # yes, the plural is intentional
     - Consume Media:
+      - AudioBookBay Automated: app/audiobookbay-automated.md
       - AudioBookRequest: app/audiobookrequest.md
       - Audiobookshelf: app/audiobookshelf.md
       - BookLore: app/booklore.md
@@ -210,6 +211,7 @@ nav:
     - No Reselling Policy: legal/no-reselling-policy.md
     - No Piracy Policy: legal/no-piracy-policy.md
     - Abuse: legal/abuse.md    
+    - Notice and Takedown Procedure: legal/takedownnotice.md
   - Open:
     - open/index.md
     - Reports:
