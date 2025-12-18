@@ -44,7 +44,7 @@ Configure a "SABNZBD" downloader in Radarr/Sonarr, pointing to `http://nzbdav:30
 
 Paste in the SABNZBD API key from NzbDAV, and test.
 
-Optionally, you may want to add "ElfZyclops" as a generic TorzNab indexer in Prowlarr, with the URL `http://elfhosted-internal.zyclops`, and no API key. ElfZyclops is an internal NZB cache built from all internal NzbDAV activity (*see below*)
+Optionally, you may want to add "ElfZyclops" as a generic NewsNab indexer in Prowlarr, with the URL `http://elfhosted-internal.zyclops`, and no API key. ElfZyclops is an internal NZB cache built from all internal NzbDAV activity (*see below*)
 
 In NzbDAV..
 
@@ -76,17 +76,17 @@ Automatic queue management - tune these to your preferences, depending on whethe
 
 ### Shared cache
 
-Every NZB file ingested by an ElfHosted NzbDAV instance also anonymously submits that NZB to an internal-only TorzNab-compatible cache, "ElfZyclops", which is then usable exclusively by ElfHosted Stremio/Aarr users, reducing API impact on external indexers and improving search speed.
+Every NZB file ingested by an ElfHosted NzbDAV instance also anonymously submits that NZB to an internal-only NewsNab-compatible cache, "ElfZyclops", which is then usable exclusively by ElfHosted Stremio/Aarr users, reducing API impact on external indexers and improving search speed.
 
 Here's how to use ElfZyclops
 
 #### Stremio
 
-Add a TorzNab indexer in [AIOStreams][aiostreams], with the URL `http://elfhosted-internal.zyclops`, with no API key.
+Add a NewsNab indexer in [AIOStreams][aiostreams], with the URL `http://elfhosted-internal.zyclops`, with no API key.
 
 #### Prowlarr
 
-Add a TorzNab indexer in [Prowlarr][prowlarr], with the URL `http://elfhosted-internal.zyclops`, with no API key, and sync the indexer to your Radarr/Sonarr instances.
+Add a NewsNab indexer in [Prowlarr][prowlarr], with the URL `http://elfhosted-internal.zyclops`, with no API key, and sync the indexer to your Radarr/Sonarr instances.
 
 #### Opting out
 
