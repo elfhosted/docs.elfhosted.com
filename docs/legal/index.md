@@ -33,3 +33,7 @@ This section lists the not-so-cute but necessary legal notes you need to be awar
 !!! question "How do I report abuse?"
 
     Answer: See the [Abuse](/legal/abuse/) policy
+
+!!! question "How do I submit a takedown notice?"
+
+    Answer: See the [Notice & Takedown policy](/legal/takedownnotice/)
