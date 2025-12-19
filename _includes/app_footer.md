@@ -29,6 +29,10 @@ You can contribute directly to the development of {{ page.meta.slug }} using the
 {% endfor %}
 {% endif %}
 
+!!! warning "Bring your own content"
+
+    ElfHosted deploys {{ page.meta.slug }} as infrastructure only. We do not supply media, indexes, or accounts, and we cannot vet how you configure the app. You must provide your own lawful sources, ensure you have the rights to access anything you connect, and comply with our [Acceptable Use Policy](/legal/acceptable-use/) and [No-Piracy Policy](/legal/no-piracy-policy/). Abuse complaints are handled per the [Abuse Policy](/legal/abuse/) and [Notice & Takedown process](/legal/takedownnotice/); misconfigured workloads may be suspended without refund.
+
 {% include 'testimonials.md' %}
 
 --8<-- "common-links.md"
