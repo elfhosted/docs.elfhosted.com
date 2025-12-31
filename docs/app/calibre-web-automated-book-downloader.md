@@ -23,7 +23,27 @@ The contents of `/cwa-book-ingest/` will be deleted after ingestion (*You can, h
 
 ### Custom download location
 
-If you **don't** want downloads to be ingested into CWA, but rather to be stored elsewhere for ingestion (into [Booklore][booklore], for example), you can override the `INGEST_DIR` ENV var using [ElfBot], to point to wherever your want the downloads to end up (usually `/storage/rclone/<sommething>), based on remote storage you've [magic-mounted][rclone].
+If you **don't** want downloads to be ingested into CWA, but rather to be stored elsewhere for ingestion (into [Booklore][booklore], for example), you can override the `INGEST_DIR` ENV var using [ElfBot], as described below:
+
+#### Calibre-Web
+
+``` title="Quick-paste into CWA Downloader's environment variables using ElfBot"
+INGEST_DIR=/cwa-book-ingest/
+```
+
+#### Booklore
+
+``` title="Quick-paste into CWA Downloader's environment variables using ElfBot"
+INGEST_DIR=/booklore
+```
+
+#### Other (rclone)
+
+You can also use any rclone-mounted storage (usually `/storage/rclone/<something>), based on remote storage you've [magic-mounted][rclone].
+
+``` title="Quick-paste into CWA Downloader's environment variables using ElfBot"
+INGEST_DIR=/storage/rclone/whatever-the-path-is
+```
 
 ### Fast downloads for donators
 
