@@ -28,6 +28,10 @@ Connect your subsonic-compatible app to `https://<username>-navidrome.elfhosted.
 
 ## Where's my music?
 
-Navidrome will automatically index and display music from the `/storage/elfstorage/music` folder. To change the target folder, create `/config/navidrome/navidrome.toml`, and populate with the [desired configuration options](https://www.navidrome.org/docs/usage/configuration-options/#basic-configuration). Use [ElfBot][elfbot] to restart Navidrome after saving changes.
+Navidrome refers to the `ND_MUSICFOLDER` environment variable to determine where to look for your music. Identify where your music is found (usually `/storage/rclone/<something>`), if you've [magic-mounted][rclone] some external storage, and use [ElfBot][elfbot] to set this variable, like this:
+
+``` title="Quick-paste into Navidrome's environment variables using ElfBot"
+ND_MUSICFOLDER=<path to wherever your music is>
+```
 
 {% include 'app_footer.md' %}
