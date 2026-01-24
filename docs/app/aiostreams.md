@@ -40,7 +40,7 @@ AIOStreams now provides built-in proxying, if you don't want / need to use Strem
 
 To configure built-in proxying, create one or more proxy users, as follows:
 
-``` title="Quick-paste into StremThru's environment variables using ElfBot"
+``` title="Quick-paste into AIOStreams's environment variables using ElfBot"
 AIOSTREAMS_AUTH=user1:user1password,user2:user2password
 ```
 
@@ -70,7 +70,7 @@ API_PASSWORD=greengoblinwuzhere
 
 If you have both StremThru **and** MediaFlowProxy, we'll default your AIOStreams to work with StremThru, but you can override these defaults by setting the following ENV vars using [ElfBot][elfbot]:
 
-``` title="Quick-paste into StremThru's environment variables using ElfBot"
+``` title="Quick-paste into AIOStreams's environment variables using ElfBot"
 FORCE_PROXY_ID=mediaflow
 FORCE_PROXY_URL=http://mediaflow-proxy:8888
 FORCE_PROXY_PUBLIC_URL=https://<your mediaflow proxy hostname>
@@ -80,7 +80,7 @@ FORCE_PROXY_PUBLIC_URL=https://<your mediaflow proxy hostname>
 
 If you prefer to use an external (non-ElfHosted) instance of either StremThru or MediaFlowProxy, you'll need to pass ENV vars to AIOStreams to override our preset defaults. There's usually a disparity between the internal and the public URL of the proxy, but assuming an external StremThru with url `https://mystremthru.mickeymouse.com`, you'd set:
 
-``` title="Quick-paste into StremThru's environment variables using ElfBot"
+``` title="Quick-paste into AIOStreams's environment variables using ElfBot"
 FORCE_PROXY_ID=stremthru
 FORCE_PROXY_URL=https://mystremthru.mickeymouse.com
 FORCE_PROXY_PUBLIC_URL=https://mystremthru.mickeymouse.com
@@ -92,7 +92,7 @@ AIOStreams uses a secret key to encrypt the data you provide, so that you're not
 
 AIOStreams won't work without a `SECRET_KEY`, but we've set a secret default so that the app will work without configuration. Users who prefer to, can change their `SECRET_KEY` (and re-install the addon), by generating a 64-character hexidecimal string (*`openssl rand -hex 32` for example*), and then applying it to AIOStreams using [ElfBot][elfbot]:
 
-``` title="Quick-paste into StremThru's environment variables using ElfBot"
+``` title="Quick-paste into AIOStreams's environment variables using ElfBot"
 SECRET_KEY=whateveryousetmakesureits64charshexidecimalonly
 ```
 
