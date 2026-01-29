@@ -57,7 +57,6 @@ nav:
       - BookLore: app/booklore.md
       - Calibre: app/calibre.md
       - Calibre Web: app/calibre-web.md
-      - CWA Book Downloader: app/calibre-web-automated-book-downloader.md
       - Emby: app/emby.md
       - Flixio: app/flixio.md
       - Jellyfin: app/jellyfin.md
@@ -66,6 +65,7 @@ nav:
       - Movie Roulette: app/movie-roulette.md
       - Navidrome: app/navidrome.md
       - Plex: app/plex.md 
+      - Shelfmark: app/shelfmark.md
       - Storyteller: app/storyteller.md
       - Stremio Server: app/stremio-server.md 
 

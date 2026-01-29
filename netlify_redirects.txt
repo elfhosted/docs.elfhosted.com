@@ -8,6 +8,7 @@
 # Page renames
 /app/xtremio /app/youriptv 301!
 /app/annatar /app/aiostreams 301!
+/app/calibre-web-automated-book-downloader /app/shelfmark 301!
 /open/sponsorship /sponsorship 301!
 
 # Guide refactors
