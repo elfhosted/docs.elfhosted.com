@@ -28,15 +28,8 @@ Specifically, Jackett, combined with [Stremio-Jackett][stremio-jackett], is one 
 
 ## How do I use it?
 
-### Adding Flaresolverr
+### FlareSolverr
 
-Some indexers behind Cloudflare DDOS protection require [Flaresolverr][flaresolverr].
-
-Once Flaresolverr is added to your account, configure it in Jackett simply as `https://flaresolverr:`
-
-![](/images/jackett-setup-flaresolverr.png)
-
-!!! warning "Jackett will restart"
-    Jackett doesn't warn you, but applying configurations changes will cause it to restart. If your browser window reloads on a 502 error, wait a minute or two, and then retry.
+ElfHosted users have access to an internal FlareSolverr instance to support cloudflare-protected indexers. See [our FlareSolverr docs][flaresolverr] for configuration details.
 
 {% include 'app_footer.md' %}

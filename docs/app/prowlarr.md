@@ -7,14 +7,8 @@ links:
 - name: subreddit
   uri: https://www.reddit.com/r/prowlarr
 works_with:
-- Deluge
-- LazyLibrarian
-- NZBGet
-- qBittorrent
+- FlareSolverr
 - Radarr
-- Readarr
-- ruTorrent
-- SABnzbd
 - Sonarr
 sponsorship: 
 - name: Open Collective
@@ -69,6 +63,10 @@ Add an indexer named `ElfStremThru` as a `Generic Torznab` indexer, as follows:
 
 * URL: `https://elfhosted-internal.stremthru/v0/torznab`
 * API: `<leave empty>`
+
+### FlareSolverr
+
+ElfHosted users have access to an internal FlareSolverr instance to support cloudflare-protected indexers. See [our FlareSolverr docs][flaresolverr] for configuration details.
 
 ### Enabling apps
 
