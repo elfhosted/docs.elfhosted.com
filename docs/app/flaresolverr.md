@@ -53,7 +53,8 @@ Example screenshot:
 * Type: `Http`
 * Name: `FlareSolverr-Egress`
 * Tags: `flaresolverr-egress`
-* Host: `http://elfhosted-internal.flaresolverr:8888`
+* Host: `elfhosted-internal.flaresolverr`
+* Port: `8888`
 
 ![](/images/prowlarr-flaresolverr-setup-1.png)
 
