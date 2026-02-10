@@ -27,4 +27,19 @@ The following folders are mounted into Shelfmark for automated download and sort
 
 You can also use any rclone-mounted external storage (usually `/storage/rclone/<something>), based on remote storage you've [magic-mounted][rclone], and use this as your download path.
 
+## Search Mode 
+
+### Direct
+
+## Universal Mode
+
+### Decypharr
+
+* Create an "arr" called "shelfmark", and set it to download uncached content. Add any desired file extensions (.epub, .mobi, .cbz, etc) under Settings -> General.
+
+### NzbDAV
+
+If using Shelfmark with NZBDav, go into Settings -> SABnzbd, and **uncheck** the checkbox labeled `Fail downloads for nzbs without video content` (*since you're not going to be downloading videos*). Note that this **may** impact your NZBDav video streaming in other apps, since non-video NZBs will no longer be rejected.
+
+
 {% include 'app_footer.md' %}
