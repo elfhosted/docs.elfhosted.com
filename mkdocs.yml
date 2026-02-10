@@ -133,6 +133,7 @@ nav:
       - Kubernetes Dashboard: app/kubernetes-dashboard.md
       - Mattermost: app/mattermost.md
       - Miniflux: app/miniflux.md
+      - OpenClaw: app/openclaw.md
       - Privatebin: app/privatebin.md
       - PairDrop: app/pairdrop.md
       - PlexTraktSync: app/plextraktsync.md
