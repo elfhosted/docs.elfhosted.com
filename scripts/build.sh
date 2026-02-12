@@ -10,8 +10,9 @@ set -x # debug failed builds
 # Run python build script to check for errors
 # python3 scripts/build.py mkdocs.yml
 
-# brew install pngquant
+brew install pngquant
 pip install mkdocs-material
+mkdocs build -f mkdocs.yml
 
 # Setup any necessary netlify redirects
 cp netlify_redirects.txt site/_redirects
