@@ -19,17 +19,16 @@ repo_url: 'https://github.com/elfhosted/docs.elfhosted.com'
 # Plugins
 plugins:
   search:
-    enable_parallel: false
   minify:
     minify_html: true
   autolinks:
   git-revision-date-localized:
     type: date
-    fallback_to_build_date: true  
+    fallback_to_build_date: true
+    enable_parallel_processing: false
   macros:
     verbose: true
     include_dir: _includes
-    enable_parallel_processing: false
   meta-descriptions: # If not provided, auto-generate a description (https://pypi.org/project/mkdocs-meta-descriptions-plugin/)
   social:
     # debug: true
