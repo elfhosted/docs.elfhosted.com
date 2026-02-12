@@ -19,6 +19,7 @@ repo_url: 'https://github.com/elfhosted/docs.elfhosted.com'
 # Plugins
 plugins:
   search:
+    enable_parallel: false
   minify:
     minify_html: true
   autolinks:
