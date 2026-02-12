@@ -1,0 +1,41 @@
+/* JetBrainsMono Nerd Font for ttyd
+ * Download woff2 files from:
+ *   https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/JetBrainsMono.tar.xz
+ * Extract and convert ttf->woff2 or grab pre-built woff2 from:
+ *   https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/JetBrainsMono
+ *
+ * Place the .woff2 files alongside this CSS on your static site and
+ * update the url() paths below if needed.
+ */
+
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('JetBrainsMonoNerdFont-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('JetBrainsMonoNerdFont-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('JetBrainsMonoNerdFont-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('JetBrainsMonoNerdFont-BoldItalic.woff2') format('woff2');
+}
