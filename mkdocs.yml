@@ -29,6 +29,7 @@ plugins:
   macros:
     verbose: true
     include_dir: _includes
+    enable_parallel_processing: false
   meta-descriptions: # If not provided, auto-generate a description (https://pypi.org/project/mkdocs-meta-descriptions-plugin/)
   social:
     # debug: true
