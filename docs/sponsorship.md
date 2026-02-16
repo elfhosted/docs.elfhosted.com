@@ -82,6 +82,7 @@ We sponsor the following apps because they underpin our platform, but without ex
 | [Prowlarr](https://opencollective.com/prowlarr) |  Manages indexers for Aars |
 | [Radarr](https://opencollective.com/radarr) | Manages Movies |
 | [Rclone](https://github.com/sponsors/rclone) |  Used to mount remote storage |
+| [Seeerr](https://opencollective.com/seerr) |  Request manager for the Plex/Emby/Jellyfin ecosystem |
 | [Sonarr](https://opencollective.com/sonarr) |  Manages TV episodes |
 
 

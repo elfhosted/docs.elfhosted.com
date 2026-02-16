@@ -76,7 +76,6 @@ nav:
       - Immich: app/immich.md
       - ImageMaid: app/imagemaid.md
       - Jellyfin Accounts: app/jellyfin-accounts.md
-      - Jellyseerr: app/jellyseerr.md
       - Jellystat: app/jellystat.md
       - Kometa: app/kometa.md
       - Lidarr: app/lidarr.md
@@ -85,13 +84,13 @@ nav:
       - NextPVR: app/nextpvr.md
       - Notifiarr: app/notifiarr.md
       - Ombi: app/ombi.md
-      - Overseerr: app/overseerr.md
       - PeerTube: app/peertube.md
       - Petio: app/petio.md
       - Pulsarr: app/pulsarr.md
       - Radarr: app/radarr.md
       - Readarr: app/readarr.md
       - RPDB: app/rpdb.md
+      - Seerr: app/seerr.md
       - SeerrBridge: app/seerrbridge.md
       - Shoko: app/shoko.md
       - Sonarr: app/sonarr.md

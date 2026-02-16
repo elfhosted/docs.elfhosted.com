@@ -8,6 +8,8 @@
 # Page renames
 /app/xtremio /app/youriptv 301!
 /app/annatar /app/aiostreams 301!
+/app/jellyseerr /app/seerr 301!
+/app/overseerr /app/overseerr 301!
 /app/calibre-web-automated-book-downloader /app/shelfmark 301!
 /open/sponsorship /sponsorship 301!
 
